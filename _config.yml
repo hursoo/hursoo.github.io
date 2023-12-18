@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "HurSoo의 웹페이지입니다"
   location         : "South Korea"
-  email            : crctaper@snu.ac.kr
+  email            : cretaper@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
