@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 개요"
+title: "[23파이썬특강] 개요-1"
 author_profile: false
 toc : true
 ---
