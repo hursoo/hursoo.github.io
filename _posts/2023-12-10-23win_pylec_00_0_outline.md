@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 개요-2"
+title: "[23파이썬특강] 개요-3"
 author_profile: false
 toc : true
 ---
@@ -13,7 +13,8 @@ toc : true
 
 ## 01강
 ### 01이론
-- [01강_이론](2023-12-17-23win_pylec_01_1_theory.md) 
+- [01강_이론](2023-12-17-23win_pylec_01_1_theory.md)
+- [01강_이론-1](https://github.com/hursoo/hursoo.github.io/blob/master/_posts/2023-12-17-23win_pylec_01_1_theory.md)
 ### 01실습
 - [01강_실습](2023-12-17-23win_pylec_01_2_code.md) 
 
