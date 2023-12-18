@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 개요-1"
+title: "[23파이썬특강] 개요-2"
 author_profile: false
 toc : true
 ---
@@ -13,15 +13,15 @@ toc : true
 
 ## 01강
 ### 01이론
-- [01강_이론](./2023-12-17-23win_pylec_01_1_theory.md) 
+- [01강_이론](/2023-12-17-23win_pylec_01_1_theory.md) 
 ### 01실습
-- [01강_실습](./2023-12-17-23win_pylec_01_2_code.md) 
+- [01강_실습](/2023-12-17-23win_pylec_01_2_code.md) 
 
 ## 02강
 ### 02이론
-- [01강_이론](./2023-12-17-23win_pylec_02_1_theory.md) 
+- [01강_이론](/2023-12-17-23win_pylec_02_1_theory.md) 
 ### 02실습
-- [01강_실습](./2023-12-17-23win_pylec_02_2_code.md) 
+- [01강_실습](/2023-12-17-23win_pylec_02_2_code.md) 
 
 ## 03강
 ### 03이론
