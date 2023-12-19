@@ -11,7 +11,8 @@ author_profile: true
 
 1. <a href="https://hursoo.github.io/23win_pylec_00_0_outline/">사전 모임</a>
 2. [사전모임](https://hursoo.github.io/23win_pylec_00_0_outline/)
-3. [23-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](./_posts/2023-12-17-23win_pylec_02_2_code/)
+3. [11123-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](https://hursoo.github.io/23win_pylec_01_2_code/)
+3. [23-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](../23win_pylec_02_2_code/)
 4. [23-동계-파이썬-특강 : 3. 자유자재의 데이터 가공](./_posts/2023-12-17-23win_pylec_03_2_code/)
 
 
