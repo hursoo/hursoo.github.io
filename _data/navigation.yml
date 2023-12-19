@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Search"
-    url: /search/
+  - title: "Home"
+    url: https://hursoo.github.io
+  - title: "About"
+    url: /about/
+  - title: "2023 동계 파이썬 특강"
+    url: /23Win_Python_lec/
 
 
   # - title: "About"

@@ -1,6 +1,6 @@
 ---
 title: "이 웹페이지 설명서"
-permlink: /about/
+permalink: /about/
 layout: single
 ---
 
