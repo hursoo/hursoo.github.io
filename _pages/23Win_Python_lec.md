@@ -1,29 +1,23 @@
 ---
-title: "2023년 동계 파이썬 특강 참여하기"
+title: "23Win_Python_lec"
 permalink: /23Win_Python_lec/
 layout: single
 author_profile: true
-
 ---
 
+## 주요 내용
 
-## 2023년 동계 파이썬 특강
+- 교재 : 김영우(2022), 『쉽게 배우는 파이썬 데이터 분석』. 이지스퍼블리싱
+- [책 소개](http://www.easyspub.co.kr/20_Menu/BookView/515/PUB#tab04), [실습데이터 저장소](https://github.com/youngwoos/Doit_Python)
 
-1. <a href="https://hursoo.github.io/23win_pylec_00_0_outline/">사전 모임</a>
-2. [사전모임](https://hursoo.github.io/23win_pylec_00_0_outline/)
-3. [11123-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](https://hursoo.github.io/23win_pylec_01_2_code/)
-3. [23-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](../23win_pylec_02_2_code/)
-4. [23-동계-파이썬-특강 : 3. 자유자재의 데이터 가공](./_posts/2023-12-17-23win_pylec_03_2_code/)
-
-
-1. [23-동계-파이썬-특강 : 0. 사전 모임](https://hursoo.github.io/_posts/2023-12-10-23win_pylec_00_0_outline/)
-2. [23-동계-파이썬-특강 : 1. 개발환경과 기본개념](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_01_1_theory/)
-3. [23-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_02_2_code/)
-4. [23-동계-파이썬-특강 : 3. 자유자재의 데이터 가공](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_03_2_code/)
-
-
-1. [23-동계-파이썬-특강 : 0. 사전 모임](https://hursoo.github.io/_posts/2023-12-10-23win_pylec_00_0_outline.md/)
-2. [23-동계-파이썬-특강 : 1. 개발환경과 기본개념](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_01_1_theory.md/)
-3. [23-동계-파이썬-특강 : 2. 데이터 프레임과 분석 기초](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_02_2_code.md/)
-4. [23-동계-파이썬-특강 : 3. 자유자재의 데이터 가공](https://hursoo.github.io/_posts/2023-12-17-23win_pylec_03_2_code.md/)
-
+| 순서 | 날짜(요일) |                          주요 내용                           | 교재 목차                | 교재 범위 |
+| :--: | :--------: | :----------------------------------------------------------: | :----------------------- | :-------: |
+|  0   | 12/29 (금) | [사전 모임](http://hursoo.github.io/23win_pylec_00_0_outline/) | 파이썬, 주피터랩 설치 등 |           |
+|  1   | 01/02 (화) |  [데이터 분석 환경과 기본 개념](2023win_python_lec_01.html)  | 첫째마당 : 01-03장       | 014-073쪽 |
+|  2   | 01/04 (목) |   [데이터 프레임과 분석 기초](2023win_python_lec_02.html)    | 둘째마당 : 04-05장       | 074-130쪽 |
+|  3   | 01/09 (화) |     [자유자재의 데이터 가공](2023win_python_lec_03.html)     | 둘째마당 : 06장          | 131-176쪽 |
+|  4   | 01/11 (목) |  [데이터 정제와 그래프 시각화](2023win_python_lec_04.html)   | 둘째마당 : 07-08장       | 177-221쪽 |
+|  5   | 01/16 (화) |       [실전, 데이터 분석](2023win_python_lec_05.html)        | 셋째마당 : 09장          | 222-275쪽 |
+|  6   | 01/18 (목) |       [다양한 데이터 분석](2023win_python_lec_06.html)       | 넷째마당 : 10-13장       | 276-329쪽 |
+|  7   | 01/23 (화) |       [데이터 과학의 세계](2023win_python_lec_07.html)       | 다섯째마당 : 14-15장     | 330-379쪽 |
+|  8   | 01/25 (목) |  [데이터 추출 방법과 자료구조](2023win_python_lec_08.html)   | 여섯째마당 : 16-18장     | 380-444쪽 |
