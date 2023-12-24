@@ -148,7 +148,7 @@ toc : true
 ### [Do it! 실습] JupyterLab 바로 가기 만들기(50쪽)
 
 
-### 3장을 위한 준비(51쪽)
+## 3장을 위한 준비(51쪽)
 
 
 
@@ -997,13 +997,12 @@ sns.countplot(data = df, y='class', hue='alive') # y축 class
 ### 함수 사용법 궁금할 때 : Help 함수 활용(68쪽)
 
 
-
 ```python
 # sns.countplot() 매뉴얼 출력
 sns.countplot?
 ```
 
-<pre>
+<span style="color:black; background-color:노랑;"> 
 [1;31mSignature:[0m
 [0msns[0m[1;33m.[0m[0mcountplot[0m[1;33m([0m[1;33m
 [0m    [0mdata[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
@@ -1023,6 +1022,8 @@ sns.countplot?
 [0m    [1;33m**[0m[0mkwargs[0m[1;33m,[0m[1;33m
 [0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
 [1;31mDocstring:[0m
+
+<br>
 Show the counts of observations in each categorical bin using bars.
 
 A count plot can be thought of as a histogram across a categorical, instead
@@ -1035,12 +1036,12 @@ its default behavior is somewhat different.
 .. note::
     This function always treats one of the variables as categorical and
     draws data at ordinal positions (0, 1, ... n) on the relevant axis,
-    even when the data has a numeric or date type.
+    even when the data has a numeric or date type.</span>
 
-See the :ref:`tutorial <categorical_tutorial>` for more information.    
+<span style="color:black; background-color:노랑;">See the :ref:`tutorial <categorical_tutorial>` for more information.   
 
-Parameters
-----------
+<br>
+Parameters <br>
 data : DataFrame, array, or list of arrays, optional
     Dataset for plotting. If ``x`` and ``y`` are absent, this is
     interpreted as wide-form. Otherwise it is expected to be long-form.    
@@ -1073,23 +1074,22 @@ kwargs : key, value mappings
     Other keyword arguments are passed through to
     :meth:`matplotlib.axes.Axes.bar`.
 
-Returns
--------
+<br>
+Returns <br>
 ax : matplotlib Axes
     Returns the Axes object with the plot drawn onto it.    
 
-See Also
---------
+<br>
+See Also <br>
 barplot : Show point estimates and confidence intervals using bars.    
 catplot : Combine a categorical plot with a :class:`FacetGrid`.    
 
-Examples
---------
-
+<br>
+Examples <br>
 .. include:: ../docstrings/countplot.rst
 [1;31mFile:[0m      c:\users\tokyo\anaconda3\lib\site-packages\seaborn\categorical.py
-[1;31mType:[0m      function
-</pre>
+[1;31mType:[0m      function</span>
+
 ### 모듈 알아 보기(69쪽)
 
 - 모듈 : 비슷한 함수끼리 묶은 것
@@ -1168,8 +1168,9 @@ Requirement already satisfied: numpy>=1.21.0 in c:\users\tokyo\anaconda3\lib\sit
 Requirement already satisfied: six>=1.5 in c:\users\tokyo\anaconda3\lib\site-packages (from python-dateutil>=2.8.2->pandas->pydataset) (1.16.0)
 Note: you may need to restart the kernel to use updated packages.
 </pre>
-### 패키지 함수 사용하기(72쪽)
 
+
+### 패키지 함수 사용하기(72쪽)
 
 
 ```python
