@@ -20,7 +20,7 @@ title                    : "Bytes & Time"
 title_separator          : "|"
 subtitle                 : "Exploing Digital History"
 name                     : "HurSoo"
-description              : "A"
+description              : "디지털 역사학 블로거입니다"
 url                      : "https://hursoo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "HurSoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "HurSoo의 웹페이지입니다"
+  bio              : "디지털 역사학 블로거입니다"
   location         : "South Korea"
   email            : cretaper@gmail.com
   links:
