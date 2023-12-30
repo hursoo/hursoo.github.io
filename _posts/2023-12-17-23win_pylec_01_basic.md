@@ -61,8 +61,7 @@ toc : true
 - 모듈에 들어있는 함수를 사용하려면, ```패키지명.모듈명.함수명()```을 입력하면 된다.
 
 ### 실습 코드
-- 예습용 코드: 다음 코드 파일을 다운받아서 실행해 보자 [2023win_python_lec_01_search.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/full_code/2023win_python_lec_01_search.ipynb)
-- 강의 시간에 사용할 코드 파일: 다음 파일을 워킹디렉토리에 다운로드 받아서 참석. [2023win_python_lec_01.ipynb](https://github.com/hursoo/2023_winter_python-lecture/tree/main/excise_code)
+- 강의 시간에 사용할 코드 파일: 다음 파일을 워킹디렉토리에 다운로드 받아서 참석. [2023win_python_lec_01.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_01.ipynb)
 
 ### 참고 문헌
 - [안지혜, 2021, <<(Let's get IT) 파이썬 프로그래밍: 데이터 분석 프로젝트로 프로그래밍 사고력 기르기>>, 서울: 길벗](https://www.nl.go.kr/NL/contents/search.do?pageNum=1&pageSize=30&srchTarget=total&kwd=let%27s+get+it+%ED%8C%8C%EC%9D%B4%EC%8D%AC+%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#)
