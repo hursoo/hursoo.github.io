@@ -1,5 +1,5 @@
 ---
-title: "2023년 동계 파이썬 특강"
+title: "파이썬 특강(23-win)"
 permalink: /23Win_Python_lec/
 layout: single
 author_profile: False
