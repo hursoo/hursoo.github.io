@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 3강. 자유자재의 데이터 가공(코드)"
+title: "[23파이썬특강] 3강. 자유자재의 데이터 가공(코드 검색)"
 author_profile: false
 toc : true
 ---

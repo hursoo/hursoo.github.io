@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 2강. 데이터 프레임과 분석 기초(코드)"
+title: "[23파이썬특강] 2강. 데이터 프레임과 분석 기초(코드 검색)"
 author_profile: false
 toc : true
 ---
