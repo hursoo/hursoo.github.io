@@ -9,7 +9,7 @@ toc : true
   <style>
     table.dataframe {
       white-space: normal;
-      width: 70%;
+      width: 90%;
       height: 240px;
       display: block;
       overflow: auto;
