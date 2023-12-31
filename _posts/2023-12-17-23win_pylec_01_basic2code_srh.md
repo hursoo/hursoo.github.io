@@ -85,85 +85,34 @@ toc : true
 
 
 # 01. 안녕, 파이썬?
-
-
-## 01-1. 데이터 분석과 파이썬(19-25쪽)
-
-
-- 파이썬 사용처 : 통계 분석, 머신러닝 모델링, 텍스트 마이닝, 네트워크 분석, 지도 시각화, 주식 분석, 이미지 분석, 사운드 분석, 소프트웨어 개발
-
-- 2022년 1월 현재, 프로그래밍 언어 중 1위
-
-
-## 01-2. 파이썬이 강력한 데이터 분석 도구인 이유(26-30쪽)
-
-- 오픈 소스 ..., 다양한 그래프 작성
-
-- '프로그래밍 방식' : 재현성 확보, 오류 방지, 공동 작업에 편리
-
+- 01-1. 데이터 분석과 파이썬(19-25쪽)
+- 01-2. 파이썬이 강력한 데이터 분석 도구인 이유(26-30쪽)
 
 # 02. 파이썬 데이터 분석 환경 만들기
+- 02-1. 아나콘다로 파이썬과 JupyterLab 설치하기(32-36쪽)
+  - [Do it! 실습] 아나콘다 다운로드 및 설치하기(32쪽)
+  - [Do it! 실습] 프롬프트에서 파이썬 사용해보기(34쪽)
 
+- 02-2. JupyterLab과 친해지기(37-47쪽)
+  - [Do it! 실습] JupyterLab 실행하기(37쪽)
+  - [Do it! 실습] 노트북 다루기(39쪽)
+  - [Do it! 실습] 노트북 저장하기, 노트북 열기(43쪽)
+  - [Do it! 실습] 워킹 디렉토리 다루기(45쪽)
 
-## 02-1. 아나콘다로 파이썬과 JupyterLab 설치하기(32-36쪽)
+- 02-3. 유용한 환경 설정(48-50쪽)
+  - [Do it! 실습] 보기 좋게 화면 조절하기(48쪽)
+  - [Do it! 실습] JupyterLab 실행 파일 만들기(49쪽)
+  - [Do it! 실습] JupyterLab 바로 가기 만들기(50쪽)
 
-
-- PC에 파이썬, JupyterLab 설치
-
-  * JupyterLab : 데이터 분석 작업을 쉽게 할 수 있게 도와주는 IDE 소프트웨어
-
-  * IDE : Integrated Development Environment, 통합개발환경
-
-
-### [Do it! 실습] 아나콘다 다운로드 및 설치하기(32쪽)
-
-
-### [Do it! 실습] 프롬프트에서 파이썬 사용해보기(34쪽)
-
-
-## 02-2. JupyterLab과 친해지기(37-47쪽)
-
-
-### [Do it! 실습] JupyterLab 실행하기(37쪽)
-
-
-### [Do it! 실습] 노트북 다루기(39쪽)
-
-
-### [Do it! 실습] 노트북 저장하기, 노트북 열기(43쪽)
-
-
-### [Do it! 실습] 워킹 디렉토리 다루기(45쪽)
-
-
-## 02-3. 유용한 환경 설정(48-50쪽)
-
-
-### [Do it! 실습] 보기 좋게 화면 조절하기(48쪽)
-
-
-### [Do it! 실습] JupyterLab 실행 파일 만들기(49쪽)
-
-
-### [Do it! 실습] JupyterLab 바로 가기 만들기(50쪽)
-
-
-## 3장을 위한 준비(51쪽)
-
-
-
-
+- 3장을 위한 준비(51쪽)
 ```python
 # excel_exam.xlsx 다운로드
 # 관련 데이터 다운로드(깃헙) : https://github.com/youngwoos/Doit_Python
 ```
-
-
 ```python
 df_exam = pd.read_excel('excel_exam.xlsx') # 엑셀 파일을 불러와 df_exam에 할당
 df_exam                                    # 출력
 ```
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -354,98 +303,69 @@ df_exam                                    # 출력
 </table>
 </div>
 
+<br>
 
 # 03. 데이터 분석에 필요한 연장 챙기기
-
-
 ## 03-1. 변하는 수, '변수' 이해하기(53-58쪽)
 
-- 변수 : '변하는 수'. 다양한 값을 지닌 하나의 속성 -> 데이터는 변수들의 덩어리.
-
-- 변수는 데이터 분석의 '대상'이다. 
-
-- 데이터 분석 : 변수 간의 관계를 파악하는 작업.
-
-
 ### [Do it! 실습] 변수 만들기(54쪽)
-
-
-
 ```python
 a = 1
 a
 ```
-
 <pre>
 1
 </pre>
-
 ```python
 b = 2
 b
 ```
-
 <pre>
 2
 </pre>
-
 ```python
 c = 3
 c
 ```
-
 <pre>
 3
 </pre>
-
 ```python
 d = 3.5
 d
 ```
-
 <pre>
 3.5
 </pre>
-
 ```python
 a + b
 ```
-
 <pre>
 3
 </pre>
-
 ```python
 a + b + c
 ```
-
 <pre>
 6
 </pre>
-
 ```python
 4 / b
 ```
-
 <pre>
 2.0
 </pre>
-
 ```python
 5 * b
 ```
-
 <pre>
 10
 </pre>
-
 ```python
 # 변수명 정하기 규칙(55쪽) - 문자로 시작, 영문 권장, 소문자
 ```
 
 ### [Do it! 실습] 여러 값으로 구성된 변수 만들기(56쪽)
-
-
 
 ```python
 var1 = [1, 2, 3]
@@ -472,9 +392,8 @@ var1 + var2
 <pre>
 [1, 2, 3, 4, 5, 6]
 </pre>
+
 ### [Do it! 실습] 문자로 된 변수 만들기(57쪽)
-
-
 
 ```python
 str1 = 'a'
@@ -555,8 +474,6 @@ str1 + 2
 
 - 함수 =:= 특정 기능을 하는 상자
 
-
-
 ```python
 # 변수 만들기
 x = [1, 2, 3]
@@ -613,6 +530,7 @@ x_max
 <pre>
 3
 </pre>
+
 ## 03-3. 함수 꾸러미, '패키지' 이해하기(62-73쪽)
 
 
@@ -652,25 +570,22 @@ var
 ```python
 seaborn.countplot(x = var)
 ```
-
 <pre>
 <Axes: ylabel='count'>
 </pre>
+
 <img src="data:image/png;base64,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"/>
 
 #### 설치하거나 로드하지 않고 사용하는 내장함수
 
-- sum() max() min() 등
+- sum(), max(), min() 등
 
 
 #### 패키지 약어 활용하기
 
-
-
 ```python
 import seaborn as sns
 ```
-
 
 ```python
 sns.countplot(x = var)
@@ -964,8 +879,10 @@ sns.countplot(data = df, x='class')
 
 ```python
 sns.countplot(data = df, x='class', hue='alive') # x축 class
-# hue : 변수 항목별로 막대의 색을 다르게 표현하는 파라미터
+# hue: 변수 항목별로 막대의 색을 다르게 표현하는 파라미터
 ```
+
+- 용어: hue<sup>[1)](#footnote_1)</sup>
 
 <pre>
 <Axes: xlabel='class', ylabel='count'>
@@ -983,16 +900,6 @@ sns.countplot(data = df, y='class', hue='alive') # y축 class
 </pre>
 <img src="data:image/png;base64,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0+rVq1WjRg116NBBXbt2VYMGDbR8+XKnjot3+QEA4GYq+yeXb968udCy1atXO36OiorSP//5z4obUDFwhgoAAMAQQQUAAGCIoAIAADBEUAEAABgiqAAAAAwRVAAAAIYIKgAAAEMEFQAAgCGCCgAAwBBBBQAAYIivngEAwM2kP397hf6+qMnJFfr7nMGtzlB16tRJY8aMcfYwAACAi3HJoEpMTJTNZit0mzlzpl544QWjfV/7lmsAAFD2Fi9erJCQEOXk5BRYPmDAAA0b9vOXOn/00Udq06aNfHx81KBBA02bNk1Xr151bDt16lRFRUXJbrcrIiJCTzzxRLmP2yWDSpJ69uypjIyMArc2bdooICCgyMfk5uZW4AgBAMCvDRw4UHl5eVqzZo1j2alTp/Txxx/roYce0ieffKLf/e53euKJJ3Tw4EHNmzdPixYt0ksvvSRJ+uCDDzR79mzNmzdPhw8f1urVq3X77eX/EqfLBpXdbldYWFiBW5cuXQq85Fe/fn29+OKLSkxMVFBQkEaOHKnc3FyNHj1a4eHh8vHxUf369TV9+nTH9pJ0//33y2azOe4DAICy4evrqwcffFALFy50LHv33XdVt25dderUSS+99JKeeeYZDR8+XA0aNFC3bt30wgsvaN68eZKk9PR0hYWFqWvXroqKilK7du00cuTIch+321+UPmvWLE2aNEnPPfecJOn111/XmjVr9P777ysqKkrHjx/X8ePHJUk7d+5UaGioFi5cqJ49e6patWrX3WdOTk6BU5XZ2dnlPxEAAFzEyJEj1bZtW33//fe65ZZbtHDhQsflPLt379bOnTsdZ6QkKS8vT5cvX9bFixc1cOBA/fWvf1WDBg3Us2dP3Xvvverbt688Pcs3eVw2qD7++GP5+/s77vfq1eu628XHx+upp55y3E9PT1ejRo10zz33yGazqV69eo51tWvXliQFBwcrLCysyN89ffp0TZs2rdDyd/1fU4DP9SMMzpH+/CxnD6HScod35QConO644w61bNlSixcvVo8ePZScnKyPPvpIkpSfn69p06apf//+hR7n4+OjyMhIHTp0SElJSdqwYYNGjRqlWbNmacuWLfLy8iq3MbtsUHXu3Fl///vfHferV6+uIUOGFNouNja2wP3ExER169ZNt912m3r27Kk+ffqoe/fuJfrdEyZM0NixYx33s7Oz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lOoM1YwZMzRv3jx16tRJQ4YMUcuWLSVJa9ascbwUeDNnz57Vtm3bNGPGDHXu3Fn16tVTu3btNGHCBMfnWmVlZemRRx5RaGioAgMDFR8fr6+++qrAftasWaPY2Fj5+PioVq1a6t+/v2PdTz/9pGHDhqlGjRry8/NTr169dPjwYcf6RYsWKTg4WJ988omaNm0qf39/9ezZs8BZtry8PI0dO1bBwcEKCQnR+PHjZVlWaZ42AADgokoVVJ06ddKpU6d06tQpvf32247ljzzyiObOnVusffj7+8vf31+rV69WTk5OofWWZal37946efKk1q1bp927d6t169bq0qWL4wzW2rVr1b9/f/Xu3Vt79+7Vxo0bFRsb69hHYmKidu3apTVr1uiLL76QZVm69957deXKFcc2Fy9e1F/+8hctWbJEW7duVXp6up566inH+ldeeUVvv/22FixYoG3btunMmTNatWrVDeeWk5Oj7OzsAjcAAOC6bJYTT7esXLlSI0eO1KVLl9S6dWt17NhRgwcPVkxMjD799FPdf//9yszMdFyvJUkNGzbU+PHj9cgjj6h9+/Zq0KCB/vGPfxTa9+HDh9W4cWN9/vnnjg8bPX36tCIjI/XOO+9o4MCBWrRokR566CEdOXJEt956qyTpjTfe0PPPP6+TJ09KkiIiIvTkk0/q6aefliRdvXpV0dHRatOmjVavXn3deU2dOlXTpk0rtPzAhKYK8OFzuqqaqMmFP3MNAOD6srOzFRQUpKysLAUGBt5w21JdQyX9/Kno77//vtLT05Wbm1tg3Z49e4q1jwEDBqh379767LPP9MUXX2j9+vWaOXOm3nrrLf344486f/58oWuyLl26pKNHj0qS9u3bp5EjR1533ykpKfL09NSdd97pWBYSEqLbbrtNKSkpjmV+fn6OmJKk8PBwZWZmSvr5JceMjAzFxcU51nt6eio2NvaGL/tNmDBBY8eOddzPzs5WZGRkcZ4SAABQBZXqJb/XX39dDz30kEJDQ7V37161a9dOISEhOnbsmHr16lWiffn4+Khbt26aPHmytm/frsTERE2ZMkX5+fkKDw/Xvn37CtwOHTqkP/3pT5IkX1/fIvdbVPBYliWbzea4/+sPIrXZbMbXSNntdgUGBha4AQAA11WqoHrjjTf05ptvas6cOfL29tb48eOVlJSkJ554QllZWUYDatas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"/>
 
-[용어/ChatGPT] "Hue"라는 단어의 어원
-
-- 주로 색상과 관련된 의미로 사용되며, 이는 중세 영어 "hew"라는 단어에서 파생
-
-- 고대 영어의 "hiw"나 "hīw"에서 온 것으로, "외모", "모양", 또는 "색상"을 의미
-
-- 시간이 지나면서 이 단어는 주로 색상을 나타내는 데 사용.
-
-- Hue Saturation Lightness (HSL): 이는 색상 모델의 한 형태로, 색상(hue), 채도(saturation), 밝기(lightness)의 세 가지 기본 요소를 사용하여 색상을 정의
-
 
 ### 함수 사용법 궁금할 때 : Help 함수 활용(68쪽)
 
@@ -1002,102 +909,16 @@ sns.countplot(data = df, y='class', hue='alive') # y축 class
 sns.countplot?
 ```
 
-<span style="color:black; background-color:노랑;"> 
-[1;31mSignature:[0m
-[0msns[0m[1;33m.[0m[0mcountplot[0m[1;33m([0m[1;33m
-[0m    [0mdata[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m*[0m[1;33m,[0m[1;33m
-[0m    [0mx[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0my[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morder[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue_order[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morient[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mcolor[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mpalette[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0msaturation[0m[1;33m=[0m[1;36m0.75[0m[1;33m,[0m[1;33m
-[0m    [0mwidth[0m[1;33m=[0m[1;36m0.8[0m[1;33m,[0m[1;33m
-[0m    [0mdodge[0m[1;33m=[0m[1;32mTrue[0m[1;33m,[0m[1;33m
-[0m    [0max[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m**[0m[0mkwargs[0m[1;33m,[0m[1;33m
-[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[1;31mDocstring:[0m
-
-<br>
-Show the counts of observations in each categorical bin using bars.
-
-A count plot can be thought of as a histogram across a categorical, instead
-of quantitative, variable. The basic API and options are identical to those
-for :func:`barplot`, so you can compare counts across nested variables.
-
-Note that the newer :func:`histplot` function offers more functionality, although
-its default behavior is somewhat different.
-
-.. note::
-    This function always treats one of the variables as categorical and
-    draws data at ordinal positions (0, 1, ... n) on the relevant axis,
-    even when the data has a numeric or date type.</span>
-
-<span style="color:black; background-color:노랑;">See the :ref:`tutorial <categorical_tutorial>` for more information.   
-
-<br>
-Parameters <br>
-data : DataFrame, array, or list of arrays, optional
-    Dataset for plotting. If ``x`` and ``y`` are absent, this is
-    interpreted as wide-form. Otherwise it is expected to be long-form.    
-x, y, hue : names of variables in ``data`` or vector data, optional
-    Inputs for plotting long-form data. See examples for interpretation.    
-order, hue_order : lists of strings, optional
-    Order to plot the categorical levels in; otherwise the levels are
-    inferred from the data objects.    
-orient : "v" | "h", optional
-    Orientation of the plot (vertical or horizontal). This is usually
-    inferred based on the type of the input variables, but it can be used
-    to resolve ambiguity when both `x` and `y` are numeric or when
-    plotting wide-form data.    
-color : matplotlib color, optional
-    Single color for the elements in the plot.    
-palette : palette name, list, or dict
-    Colors to use for the different levels of the ``hue`` variable. Should
-    be something that can be interpreted by :func:`color_palette`, or a
-    dictionary mapping hue levels to matplotlib colors.    
-saturation : float, optional
-    Proportion of the original saturation to draw colors at. Large patches
-    often look better with slightly desaturated colors, but set this to
-    `1` if you want the plot colors to perfectly match the input color.    
-dodge : bool, optional
-    When hue nesting is used, whether elements should be shifted along the
-    categorical axis.    
-ax : matplotlib Axes, optional
-    Axes object to draw the plot onto, otherwise uses the current Axes.    
-kwargs : key, value mappings
-    Other keyword arguments are passed through to
-    :meth:`matplotlib.axes.Axes.bar`.
-
-<br>
-Returns <br>
-ax : matplotlib Axes
-    Returns the Axes object with the plot drawn onto it.    
-
-<br>
-See Also <br>
-barplot : Show point estimates and confidence intervals using bars.    
-catplot : Combine a categorical plot with a :class:`FacetGrid`.    
-
-<br>
-Examples <br>
-.. include:: ../docstrings/countplot.rst
-[1;31mFile:[0m      c:\users\tokyo\anaconda3\lib\site-packages\seaborn\categorical.py
-[1;31mType:[0m      function</span>
+> [1;31mSignature:[0m
+> [0msns[0m[1;33m.[0m[0mcountplot[0m[1;33m(
+> [0m[1;33m
+> ...(생략)...
 
 ### 모듈 알아 보기(69쪽)
 
 - 모듈 : 비슷한 함수끼리 묶은 것
 
 - 패키지라는 큰 꾸러미 속에, 모듈이라는 작은 꾸러미가 있는 모양
-
-- [함수, 모듈, 패키지의 차이점](https://onesixx.com/%ED%95%A8%EC%88%98-%EB%AA%A8%EB%93%88-%ED%8C%A8%ED%82%A4%EC%A7%80%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90/)
-
 
 
 ```python
@@ -1135,23 +956,7 @@ accuracy_score()
 
 - 아나콘다에 들어있지 <span style="color:red">않은</span> 패키지 사용할 때 직접 설치 필요
 
-- PyDataset : 여러 가지 데이터 셋을 손쉽게 불러올 수 있음.
-
-
-[용어/ChatGPT] 데이터셋
-
-- 관련된 데이터의 모음.
-
-- 일반적으로 표나 데이터베이스 형태로 구성되어 있으며, 여러 행과 열로 이루어져 있음.
-
-- 각 행은 개별 기록이나 관측치를 나타내고, 각 열은 해당 데이터의 다양한 속성이나 변수를 나타냄.
-
-- ex) 학교의 학생 정보를 담은 데이터셋
-
-    - 각 학생(행)에 대한 정보가 포함
-
-    - 학생의 이름, 나이, 성별, 성적 등(열)이 데이터로 기록됨
-
+- PyDataset : 여러 가지 데이터 셋<sup>[2)](#footnote_2)</sup>을 손쉽게 불러올 수 있음.
 
 
 ```python
@@ -1888,37 +1693,8 @@ Data columns (total 11 columns):
 dtypes: float64(5), int64(6)
 memory usage: 3.0+ KB
 </pre>
-[용어/ChatGPT] mtcars 데이터셋
 
-- 1974년 미국의 'Motor Trend' 잡지에 실린 자동차 연비에 대한 데이터
-
-- 32대의 자동차에 대한 다양한 측정값을 포함
-
-- 다음과 같은 열(변수)들로 구성
-
-    - mpg: 연비(Miles/(US) gallon). 갤런당 몇 마일을 주행할 수 있는지 보여줌.
-
-    - cyl: 실린더(cylinder)의 수. 자동차의 엔진에 있는 실린더의 수.
-
-    - disp: 배기량(displacement)을 입방인치로 나타낸 값.
-
-    - hp: 마력(horsepower). 자동차 엔진의 출력을 나타내는 중요한 지표.
-
-    - drat: 후방 축비(rear axle ratio). 이 값은 주행 성능과 연료 효율에 영향을 미침. 이 비율은 엔진에서 나오는 회전력(토크)이 바퀴까지 전달되기 전에 변속기와 차축을 통해 얼마나 감소하거나 증가하는지를 나타냄. -> 엔진의 드라이브 샤프트가 한 번 회전할 때 후방 차축이 회전하는 횟수의 비율입니다. 예를 들어, 후방 축비가 3:1이라면, 드라이브 샤프트가 한 번 회전할 때마다 후방 차축은 3번 회전. ex) 스포츠카는 빠른 가속을 위해 높은 축비를 사용하는 반면, 고속도로 주행에 최적화된 차량은 낮은 축비를 사용하여 연료 효율을 개선
-
-    - wt: 자동차의 무게(weight)를 1000파운드 단위로 표시.
-
-    - qsec: 1/4 마일을 주행하는 데 걸리는 시간(초). 자동차의 가속 능력을 나타내는 지표.
-
-    - vs: 엔진의 실린더 배열 형태(V/S)를 나타냅니다. V-형 배열(0)과 직렬 배열(1)을 구분.
-
-    - am: 변속기 유형(Automatic/Manual)을 나타냄. 자동 변속기(0)와 수동 변속기(1)를 구분.
-
-    - gear: 전진 기어의 수. 자동차의 변속기에 있는 기어의 수.
-
-    - carb: 기화기(carburetors)의 수. 기화기는 연료와 공기를 혼합하여 엔진에 공급하는 부품.
-
-- 이 데이터셋은 자동차 성능과 관련된 여러 측정치를 제공하며, 주로 자동차의 성능 분석, 연비 예측, 다양한 자동차 특성 간의 상관관계 분석 등에 사용.
+mtcars 데이터셋<sup>[3)](#footnote_3)</sup>
 
 
 ### [개인 실습] 혼자서 해보기(73쪽)
@@ -1978,3 +1754,36 @@ total_sum
 </pre>
 # <span style="color:blue; font-weight:bold;">The End of Note</span>
 
+---
+각주
+---
+<a name="footnote_1">1)</a> [용어/ChatGPT] Hue
+- "Hue"라는 단어의 어원: 주로 색상과 관련된 의미로 사용되며, 이는 중세 영어 "hew"라는 단어에서 파생 
+- 고대 영어의 "hiw"나 "hīw"에서 온 것으로, "외모", "모양", 또는 "색상"을 의미 
+- 시간이 지나면서 이 단어는 주로 색상을 나타내는 데 사용 
+- Hue Saturation Lightness (HSL): 이는 색상 모델의 한 형태로, 색상(hue), 채도(saturation), 밝기(lightness)의 세 가지 기본 요소를 사용하여 색상을 정의.
+
+<a name="footnote_2">2)</a> [용어/ChatGPT] 데이터셋
+- 관련된 데이터의 모음.
+- 일반적으로 표나 데이터베이스 형태로 구성되어 있으며, 여러 행과 열로 이루어져 있음.
+- 각 행은 개별 기록이나 관측치를 나타내고, 각 열은 해당 데이터의 다양한 속성이나 변수를 나타냄.
+- ex) 학교의 학생 정보를 담은 데이터셋
+    - 각 학생(행)에 대한 정보가 포함
+    - 학생의 이름, 나이, 성별, 성적 등(열)이 데이터로 기록됨
+
+<a name="footnote_3">3)</a>[용어/ChatGPT] mtcars 데이터셋
+- 1974년 미국의 'Motor Trend' 잡지에 실린 자동차 연비에 대한 데이터
+- 32대의 자동차에 대한 다양한 측정값을 포함
+- 다음과 같은 열(변수)들로 구성
+    - mpg: 연비(Miles/(US) gallon). 갤런당 몇 마일을 주행할 수 있는지 보여줌.
+    - cyl: 실린더(cylinder)의 수. 자동차의 엔진에 있는 실린더의 수.
+    - disp: 배기량(displacement)을 입방인치로 나타낸 값.
+    - hp: 마력(horsepower). 자동차 엔진의 출력을 나타내는 중요한 지표.
+    - drat: 후방 축비(rear axle ratio). 이 값은 주행 성능과 연료 효율에 영향을 미침. 이 비율은 엔진에서 나오는 회전력(토크)이 바퀴까지 전달되기 전에 변속기와 차축을 통해 얼마나 감소하거나 증가하는지를 나타냄. -> 엔진의 드라이브 샤프트가 한 번 회전할 때 후방 차축이 회전하는 횟수의 비율입니다. 예를 들어, 후방 축비가 3:1이라면, 드라이브 샤프트가 한 번 회전할 때마다 후방 차축은 3번 회전. ex) 스포츠카는 빠른 가속을 위해 높은 축비를 사용하는 반면, 고속도로 주행에 최적화된 차량은 낮은 축비를 사용하여 연료 효율을 개선
+    - wt: 자동차의 무게(weight)를 1000파운드 단위로 표시.
+    - qsec: 1/4 마일을 주행하는 데 걸리는 시간(초). 자동차의 가속 능력을 나타내는 지표.
+    - vs: 엔진의 실린더 배열 형태(V/S)를 나타냅니다. V-형 배열(0)과 직렬 배열(1)을 구분.
+    - am: 변속기 유형(Automatic/Manual)을 나타냄. 자동 변속기(0)와 수동 변속기(1)를 구분.
+    - gear: 전진 기어의 수. 자동차의 변속기에 있는 기어의 수.
+    - carb: 기화기(carburetors)의 수. 기화기는 연료와 공기를 혼합하여 엔진에 공급하는 부품.
+- 이 데이터셋은 자동차 성능과 관련된 여러 측정치를 제공하며, 주로 자동차의 성능 분석, 연비 예측, 다양한 자동차 특성 간의 상관관계 분석 등에 사용.
