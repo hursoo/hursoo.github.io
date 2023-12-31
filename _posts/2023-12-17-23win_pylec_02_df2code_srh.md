@@ -92,19 +92,7 @@ plt.rcParams.update({'figure.dpi' : '100'})
 %config InlineBackend.figure_format = 'retina'
 ```
 
-
-```python
-"""
-[챗지피티] 2023/12/09
-matplotlib이라는 단어의 출처는? -----
-"Matplotlib"이라는 단어는 파이썬의 시각화 라이브러리의 이름에서 유래. 
-"Matplotlib"의 이름은 "MATLAB"이라는 또 다른 기술적 컴퓨팅 환경과 언어에서 영감을 받아서 만들어짐.
-MATLAB은 과학 계산과 시각화를 위한 인기 있는 플랫폼.
-따라서 "Matplotlib"은 MATLAB의 그래픽 기능을 표현하는 "MAT"과 파이썬의 "Plotting library"를 결합한 이름.
-* "Plotting library"란 데이터 시각화를 위해 사용되는 소프트웨어 라이브러리. 
-   과학적, 교육적, 비즈니스 분석 등 다양한 분야에서 데이터의 패턴, 추세, 관계를 이해하고 설명하는 데 널리 사용.
-"""
-```
+matplotlib 단어 출처<sup>[1)](#footnote_1)</sup>
 
 
 ```python
@@ -125,21 +113,7 @@ var
 import seaborn as sns
 ```
 
-
-```python
-"""
-[챗지피티] 2023/12/03
-Seaborn이라는 파이썬 데이터 시각화 라이브러리는 
-"웨스트 윙(The West Wing)"이라는 텔레비전 쇼에 등장하는 
-가상 인물인 Samuel Norman Seaborn의 이름을 따서 명명되었습니다. 
-이 캐릭터는 배우 Rob Lowe가 연기했으며, 
-문제에 대해 분석적이고 체계적인 접근 방식으로 알려져 있습니다. 
-이는 Seaborn 라이브러리가 목표로 하는 매력적이고 유익한 
-통계 그래픽을 그리기 위한 고급 인터페이스를 제공하는 것과 일치합니다. 
-이러한 명명법은 프로그래밍 커뮤니티에서 소프트웨어와 라이브러리를 
-대중 문화 참조로 이름 짓는 경향을 반영합니다.
-"""
-```
+Seaborn<sup>[2)](#footnote_2)</sup>
 
 
 ```python
@@ -1492,14 +1466,10 @@ reload
 </div>
 
 
-
 # 05. 데이터 분석 기초
 
-
-## 05-1. 데이터 파악하기(99-106쪽)
-
+## 05-1. 데이터 파악하기 (99-106쪽)
 - head(), tail(), shape, info(), describe()
-
 
 
 ```python
@@ -2208,17 +2178,6 @@ exam.describe()
   </tbody>
 </table>
 </div>
-
-
-[용어] 사분위  
-
-- 사분위간 범위 : 제1 사분위수와 제3 사분위수 간의 거리(Q3-Q1)로, 데이터의 중간 50%에 대한 범위
-
-- https://support.minitab.com/ko-kr/minitab/20/help-and-how-to/graphs/boxplot/interpret-the-results/quartiles/
-
-- 그래프 속 위치 <br> 
-
- <img src='j_lab_imge/image_quantile.PNG' alt='test' style='width: 250px'/>
 
 
 
@@ -6454,7 +6413,7 @@ midwest_new
 </div>
 
 
-#### 문제 5:
+#### 문제5
 
 - 'large'와 'small'에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요
 
@@ -6500,3 +6459,19 @@ cf) 히스토그램과 막대그래프
 
 # <span style="color:blue; font-weight:bold;">The End of Note</span>
 
+# 각주
+<a name="footnote_1">1)</a> [챗지피티] 2023/12/09. matplotlib의 출처?
+- "Matplotlib"이라는 단어는 파이썬의 시각화 라이브러리의 이름에서 유래. 
+- "Matplotlib"의 이름은 "MATLAB"이라는 또 다른 기술적 컴퓨팅 환경과 언어에서 영감을 받아서 만들어짐.
+- MATLAB은 과학 계산과 시각화를 위한 인기 있는 플랫폼.
+- 따라서 "Matplotlib"은 MATLAB의 그래픽 기능을 표현하는 "MAT"과 파이썬의 "Plotting library"를 결합한 이름.
+- "Plotting library"란 데이터 시각화를 위해 사용되는 소프트웨어 라이브러리. 과학적, 교육적, 비즈니스 분석 등 다양한 분야에서 데이터의 패턴, 추세, 관계를 이해하고 설명하는 데 널리 사용.
+
+<a name="footnote_2">2)</a> [챗지피티] 2023/12/03. Seaborn 용어?
+- Seaborn이라는 파이썬 데이터 시각화 라이브러리는 
+"웨스트 윙(The West Wing)"이라는 텔레비전 쇼에 등장하는 
+가상 인물인 Samuel Norman Seaborn의 이름을 따서 명명되었다. 
+- 이 캐릭터는 배우 Rob Lowe가 연기했으며, 문제에 대해 분석적이고 체계적인 접근 방식으로 알려져 있다. 
+- 이는 Seaborn 라이브러리가 목표로 하는 매력적이고 유익한 통계 그래픽을 그리기 위한 고급 인터페이스를 제공하는 것과 일치한다. 
+- 이러한 명명법은 프로그래밍 커뮤니티에서 소프트웨어와 라이브러리를 
+대중 문화 참조로 이름 짓는 경향을 반영한다.
