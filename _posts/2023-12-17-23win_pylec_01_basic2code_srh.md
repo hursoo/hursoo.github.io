@@ -1735,6 +1735,7 @@ sum(exam)
 <pre>
 350
 </pre>
+
 ### Q3 : 합계 점수를 변수 만들어 출력하기
 
 합계 점수를 담고 있는 세 변수를 만들어 출력하시오. 앞 문제 풀 때 사용한 코드를 응용하면 됨
@@ -1755,7 +1756,9 @@ total_sum
 # <span style="color:blue; font-weight:bold;">The End of Note</span>
 
 ---
-각주
+
+# 각주
+
 ---
 <a name="footnote_1">1)</a> [용어/ChatGPT] Hue
 - "Hue"라는 단어의 어원: 주로 색상과 관련된 의미로 사용되며, 이는 중세 영어 "hew"라는 단어에서 파생 
