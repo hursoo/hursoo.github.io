@@ -64,7 +64,12 @@ toc : true
 ---
 
 ### 실습 코드
-- 강의 시간에 사용할 코드 파일: 다음 파일을 워킹 디렉터리에 다운로드 받아서 참석. [2023win_python_lec_01.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_01.ipynb)
+- 다음 파일들을 로컬 컴퓨터의 워킹 디렉터리에 다운로드 받아서 강의에 참석한다.
+- 코드 파일: 
+    - [2023win_python_lec_01_basic.ipynb](https://github.com/hursoo/023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_01_basic.ipynb)
+    - [2023win_python_lec_01_full.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_01_full.ipynb)
+- 데이터 파일: 
+    - [excel_exam.xlsx](https://github.com/youngwoos/Doit_Python)
 
 ---
 
