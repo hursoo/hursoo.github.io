@@ -755,27 +755,25 @@ sns.countplot(data = df, y = 'class', hue = 'alive')
 
 sns.countplot?
 ```
+```
+Signature:
+sns.countplot(
+    data=None,
+    *,
+    x=None,
+    y=None,
+    hue=None,
+    order=None,
+    hue_order=None,
+    orient=None,
+    color=None,
+    palette=None,
+    saturation=0.75,
+    width=0.8,
+    dodge=True,
+    ax=None,
+    **kwargs,
 
-<pre>
-[1;31mSignature:[0m
-[0msns[0m[1;33m.[0m[0mcountplot[0m[1;33m([0m[1;33m
-[0m    [0mdata[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m*[0m[1;33m,[0m[1;33m
-[0m    [0mx[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0my[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morder[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue_order[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morient[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mcolor[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mpalette[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0msaturation[0m[1;33m=[0m[1;36m0.75[0m[1;33m,[0m[1;33m
-[0m    [0mwidth[0m[1;33m=[0m[1;36m0.8[0m[1;33m,[0m[1;33m
-[0m    [0mdodge[0m[1;33m=[0m[1;32mTrue[0m[1;33m,[0m[1;33m
-[0m    [0max[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m**[0m[0mkwargs[0m[1;33m,[0m[1;33m
-[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[1;31mDocstring:[0m
 Show the counts of observations in each categorical bin using bars.
 
 A count plot can be thought of as a histogram across a categorical, instead
@@ -842,7 +840,8 @@ Examples
 .. include:: ../docstrings/countplot.rst
 [1;31mFile:[0m      c:\users\creta\anaconda3\lib\site-packages\seaborn\categorical.py
 [1;31mType:[0m      function
-</pre>
+```
+
 ### 모듈 알아 보기(69쪽)
 
 
