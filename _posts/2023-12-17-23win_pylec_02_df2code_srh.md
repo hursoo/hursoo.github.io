@@ -909,8 +909,6 @@ df
 </table>
 </div>
 
-
-
 ```python
 len(df)
 ```
@@ -1035,8 +1033,6 @@ df_exam_novar
   </tbody>
 </table>
 </div>
-
-
 
 ```python
 df_exam_novar = pd.read_excel('excel_exam_novar.xlsx', header=None)
