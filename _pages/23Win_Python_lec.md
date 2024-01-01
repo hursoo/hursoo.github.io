@@ -11,7 +11,7 @@ author_profile: False
 | 순서 | 날짜 (요일) |주요 내용|교재 범위|코드 검색|
 |:---:|:--------:|:------:|:-------|:-------:|
 | 0 | 12/29 (금) | [사전 모임](http://hursoo.github.io/23win_pylec_00_pre-meeting/) | 첫째마당: 02장(031-050)||
-| 1 | 01/02 (화) | [데이터 분석 환경과 기본 개념](http://hursoo.github.io/23win_pylec_01_basic/) | 첫째마당: 01-03장(014-073)|[변수, 함수, 패키지, 그래프](2023win_python_lec_01_full-input/)|
+| 1 | 01/02 (화) | [데이터 분석 환경과 기본 개념](http://hursoo.github.io/23win_pylec_01_basic/) | 첫째마당: 01-03장(014-073)|[변수, 함수, 패키지, 그래프](https://hursoo.github.io/2023win_python_lec_01_full-input/)|
 | 2 | 01/04 (목) | [데이터 프레임과 분석 기초](http://hursoo.github.io/23win_pylec_02_df/) | 둘째마당: 04-05장(074-130)|[데이터 프레임, 데이터 입출력, 파악, 변수명 변경, 파생변수, 빈도확인](https://hursoo.github.io/23win_pylec_02_df2code_srh/)|
 | 3 | 01/09 (화) | [자유자재의 데이터 가공](http://hursoo.github.io/23win_pylec_03_process/) | 둘째마당: 06장(131-176)|  |
 | 4 | 01/11 (목) | [데이터 정제와 그래프 시각화](http://hursoo.github.io/) | 둘째마당: 07-08장(177-221)||
