@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[23파이썬특강] 1강. 개발환경과 기본개념(코드)"
+title: "[23파이썬특강] 1강. 개발환경과 기본개념(코드 검색)"
 author_profile: false
 toc : true
 ---
@@ -9,7 +9,7 @@ toc : true
   <style>
     table.dataframe {
       white-space: normal;
-      width: 70%;
+      width: 100%;
       height: 240px;
       display: block;
       overflow: auto;
@@ -84,277 +84,6 @@ toc : true
 - pp.014-073 (60쪽)
 
 
-# 01. 안녕, 파이썬?
-
-
-## 01-1. 데이터 분석과 파이썬(19-25쪽)
-
-
-- 파이썬 사용처 : 통계 분석, 머신러닝 모델링, 텍스트 마이닝, 네트워크 분석, 지도 시각화, 주식 분석, 이미지 분석, 사운드 분석, 소프트웨어 개발
-
-- 2022년 1월 현재, 프로그래밍 언어 중 1위
-
-
-## 01-2. 파이썬이 강력한 데이터 분석 도구인 이유(26-30쪽)
-
-- 오픈 소스 ..., 다양한 그래프 작성
-
-- '프로그래밍 방식' : 재현성 확보, 오류 방지, 공동 작업에 편리
-
-
-# 02. 파이썬 데이터 분석 환경 만들기
-
-
-## 02-1. 아나콘다로 파이썬과 JupyterLab 설치하기(32-36쪽)
-
-
-- PC에 파이썬, JupyterLab 설치
-
-  * JupyterLab : 데이터 분석 작업을 쉽게 할 수 있게 도와주는 IDE 소프트웨어
-
-  * IDE : Integrated Development Environment, 통합개발환경
-
-
-### [Do it! 실습] 아나콘다 다운로드 및 설치하기(32쪽)
-
-
-### [Do it! 실습] 프롬프트에서 파이썬 사용해보기(34쪽)
-
-
-## 02-2. JupyterLab과 친해지기(37-47쪽)
-
-
-### [Do it! 실습] JupyterLab 실행하기(37쪽)
-
-
-### [Do it! 실습] 노트북 다루기(39쪽)
-
-
-### [Do it! 실습] 노트북 저장하기, 노트북 열기(43쪽)
-
-
-### [Do it! 실습] 워킹 디렉토리 다루기(45쪽)
-
-
-## 02-3. 유용한 환경 설정(48-50쪽)
-
-
-### [Do it! 실습] 보기 좋게 화면 조절하기(48쪽)
-
-
-### [Do it! 실습] JupyterLab 실행 파일 만들기(49쪽)
-
-
-### [Do it! 실습] JupyterLab 바로 가기 만들기(50쪽)
-
-
-## 3장을 위한 준비(51쪽)
-
-
-
-
-```python
-# excel_exam.xlsx 다운로드
-# 관련 데이터 다운로드(깃헙) : https://github.com/youngwoos/Doit_Python
-```
-
-
-```python
-df_exam = pd.read_excel('excel_exam.xlsx') # 엑셀 파일을 불러와 df_exam에 할당
-df_exam                                    # 출력
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>nclass</th>
-      <th>math</th>
-      <th>english</th>
-      <th>science</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>1</td>
-      <td>50</td>
-      <td>98</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>1</td>
-      <td>60</td>
-      <td>97</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>1</td>
-      <td>45</td>
-      <td>86</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>1</td>
-      <td>30</td>
-      <td>98</td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>2</td>
-      <td>25</td>
-      <td>80</td>
-      <td>65</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>2</td>
-      <td>50</td>
-      <td>89</td>
-      <td>98</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>2</td>
-      <td>80</td>
-      <td>90</td>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>2</td>
-      <td>90</td>
-      <td>78</td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>3</td>
-      <td>20</td>
-      <td>98</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>3</td>
-      <td>50</td>
-      <td>98</td>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>11</td>
-      <td>3</td>
-      <td>65</td>
-      <td>65</td>
-      <td>65</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>12</td>
-      <td>3</td>
-      <td>45</td>
-      <td>85</td>
-      <td>32</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>13</td>
-      <td>4</td>
-      <td>46</td>
-      <td>98</td>
-      <td>65</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>14</td>
-      <td>4</td>
-      <td>48</td>
-      <td>87</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>15</td>
-      <td>4</td>
-      <td>75</td>
-      <td>56</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>16</td>
-      <td>4</td>
-      <td>58</td>
-      <td>98</td>
-      <td>65</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>17</td>
-      <td>5</td>
-      <td>65</td>
-      <td>68</td>
-      <td>98</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>18</td>
-      <td>5</td>
-      <td>80</td>
-      <td>78</td>
-      <td>90</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>19</td>
-      <td>5</td>
-      <td>89</td>
-      <td>68</td>
-      <td>87</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>20</td>
-      <td>5</td>
-      <td>78</td>
-      <td>83</td>
-      <td>58</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 # 03. 데이터 분석에 필요한 연장 챙기기
 
 
@@ -372,6 +101,7 @@ df_exam                                    # 출력
 
 
 ```python
+# 변수 a에 숫자 1을 할당
 a = 1
 a
 ```
@@ -381,6 +111,7 @@ a
 </pre>
 
 ```python
+# 변수 b에 숫자 2를 할당
 b = 2
 b
 ```
@@ -390,6 +121,7 @@ b
 </pre>
 
 ```python
+# 변수 c에 숫자 3을 할당
 c = 3
 c
 ```
@@ -399,6 +131,7 @@ c
 </pre>
 
 ```python
+# # 변수 d에 숫자 3.5를 할당
 d = 3.5
 d
 ```
@@ -408,6 +141,7 @@ d
 </pre>
 
 ```python
+# 변수 a와 b를 더하라
 a + b
 ```
 
@@ -416,6 +150,7 @@ a + b
 </pre>
 
 ```python
+# 변수 a와 b와 c를 더하라
 a + b + c
 ```
 
@@ -424,6 +159,7 @@ a + b + c
 </pre>
 
 ```python
+# 4를 변수 b의 값으로 나누어라
 4 / b
 ```
 
@@ -432,6 +168,7 @@ a + b + c
 </pre>
 
 ```python
+# 5에 변수 b값을 곱해라
 5 * b
 ```
 
@@ -448,6 +185,7 @@ a + b + c
 
 
 ```python
+# [1, 2, 3]을 변수 var1에 할당하라
 var1 = [1, 2, 3]
 var1
 ```
@@ -457,6 +195,7 @@ var1
 </pre>
 
 ```python
+# [4, 5, 6]을 변수 var2에 할당하라
 var2 = [4, 5, 6]
 var2
 ```
@@ -466,6 +205,7 @@ var2
 </pre>
 
 ```python
+# 두 변수 var1과 var2를 더하라
 var1 + var2
 ```
 
@@ -477,15 +217,17 @@ var1 + var2
 
 
 ```python
-str1 = 'a'
+# 문자 x를 변수 str1에 할당하라
+str1 = 'x'
 str1
 ```
 
 <pre>
-'a'
+'x'
 </pre>
 
 ```python
+# text라는 단어를 변수 str2에 넣어라
 str2 = 'text'
 str2
 ```
@@ -495,6 +237,7 @@ str2
 </pre>
 
 ```python
+# Hello World!라는 구문을 변수 str3에 넣어라
 str3 = 'Hello World!'
 str3
 ```
@@ -504,6 +247,7 @@ str3
 </pre>
 
 ```python
+# ['a', 'b', 'c']를 변수 str4에 할당하라
 str4 = ['a', 'b', 'c']
 str4
 ```
@@ -513,6 +257,7 @@ str4
 </pre>
 
 ```python
+# ['Hello', 'World', 'is', 'good']를 변수 str5에 할당하라
 str5 = ['Hello', 'World', 'is', 'good']
 str5
 ```
@@ -522,6 +267,7 @@ str5
 </pre>
 
 ```python
+# 변수 str2와 str3을 더하라.
 str2 + str3
 ```
 
@@ -530,7 +276,8 @@ str2 + str3
 </pre>
 
 ```python
-str2 + ' ' + str3
+# 변수 str2와 str3을 더하되 그 사이에 공백 한 칸을 삽입하라.
+str2 + " " + str3
 ```
 
 <pre>
@@ -558,7 +305,7 @@ str1 + 2
 
 
 ```python
-# 변수 만들기
+# 변수 만들기: [1, 2, 3]을 변수 x에 할당하라.
 x = [1, 2, 3]
 x
 ```
@@ -568,7 +315,7 @@ x
 </pre>
 
 ```python
-# 함수 적용하기
+# 함수 적용하기: x의 각 값을 모두 합하라
 sum(x)
 ```
 
@@ -577,7 +324,7 @@ sum(x)
 </pre>
 
 ```python
-# 최대값
+# 최대값: x의 최대값 구하기
 max(x)
 ```
 
@@ -586,7 +333,7 @@ max(x)
 </pre>
 
 ```python
-# 최소값
+# 최소값: x의 최소값 구하기
 min(x)
 ```
 
@@ -595,8 +342,7 @@ min(x)
 </pre>
 
 ```python
-# 함수의 결과물로 새 변수 만들기
-
+# 함수의 결과물로 새 변수 만들기: x 각 값을 합한 뒤 이 값을 변수 x_sum에 넣어라
 x_sum = sum(x)
 x_sum
 ```
@@ -606,6 +352,7 @@ x_sum
 </pre>
 
 ```python
+# 함수의 결과물로 새 변수 만들기: x의 최대값을 변수 x_max에 넣어라
 x_max = max(x)
 x_max
 ```
@@ -641,6 +388,7 @@ import seaborn  # 패키지 로드
 
 
 ```python
+# ['a', 'a', 'b', 'c']를 변수 var에 넣어라
 var = ['a', 'a', 'b', 'c']
 var
 ```
@@ -650,6 +398,7 @@ var
 </pre>
 
 ```python
+# var 값으로 x축을 구성해 빈도 막대 그래프를 출력하라: seaborn 패키지 함수 countplot() 사용
 seaborn.countplot(x = var)
 ```
 
@@ -668,11 +417,13 @@ seaborn.countplot(x = var)
 
 
 ```python
+# seaborn 패키지를 불러와서 sns라는 약어를 부여하라
 import seaborn as sns
 ```
 
 
 ```python
+# var 값으로 x축을 구성해 빈도 막대 그래프를 출력하라
 sns.countplot(x = var)
 ```
 
@@ -934,7 +685,7 @@ df
 </div>
 
 
-### 함수의 다양한 기능 이용하기(66쪽)
+#### 함수의 다양한 기능 이용하기(66쪽)
 
 - 파라미터(매개변수) : 함수의 옵션을 설정하는 명령어.<br> 
 
@@ -943,7 +694,11 @@ df
 
 
 ```python
-sns.countplot(data = df, x='sex')
+# countplot()의 data 파라미터에 df를 지정하고, 
+# x 파라미터에 sex를 지정해서 
+#'성별 빈도 막대 그래프'를 만들어라
+
+sns.countplot(data = df, x = 'sex')
 ```
 
 <pre>
@@ -953,7 +708,10 @@ sns.countplot(data = df, x='sex')
 
 
 ```python
-sns.countplot(data = df, x='class')
+# x 파라미터를 class로 변경해서 
+#'선실 등급별 빈도 막대 그래프'를 만들어라
+
+sns.countplot(data = df, x = 'class')
 ```
 
 <pre>
@@ -963,8 +721,11 @@ sns.countplot(data = df, x='class')
 
 
 ```python
-sns.countplot(data = df, x='class', hue='alive') # x축 class
-# hue : 변수 항목별로 막대의 색을 다르게 표현하는 파라미터
+# x 파라미터를 class로 지정하고, hue 파라미터에 alive 변수를 지정해서
+# '선실 등급별 생존 여부를 나타내는 막대 그래프'를 만들어라
+# cf) hue : 변수 항목별로 막대의 색을 다르게 표현하는 파라미터
+
+sns.countplot(data = df, x = 'class', hue = 'alive')
 ```
 
 <pre>
@@ -974,8 +735,10 @@ sns.countplot(data = df, x='class', hue='alive') # x축 class
 
 
 ```python
-sns.countplot(data = df, y='class', hue='alive') # y축 class
-# hue : 변수 항목별로 막대의 색을 다르게 표현하는 파라미터
+# class를 y 파라미터로 변경하여
+# '선실 등급별 생존 여부를 나타내는 막대 그래프'를 만들어라
+
+sns.countplot(data = df, y = 'class', hue = 'alive')
 ```
 
 <pre>
@@ -983,47 +746,34 @@ sns.countplot(data = df, y='class', hue='alive') # y축 class
 </pre>
 <img src="data:image/png;base64,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0+rVq1WjRg116NBBXbt2VYMGDbR8+XKnjot3+QEA4GYq+yeXb968udCy1atXO36OiorSP//5z4obUDFwhgoAAMAQQQUAAGCIoAIAADBEUAEAABgiqAAAAAwRVAAAAIYIKgAAAEMEFQAAgCGCCgAAwBBBBQAAYIivngEAwM2kP397hf6+qMnJFfr7nMGtzlB16tRJY8aMcfYwAACAi3HJoEpMTJTNZit0mzlzpl544QWjfV/7lmsAAFD2Fi9erJCQEOXk5BRYPmDAAA0b9vOXOn/00Udq06aNfHx81KBBA02bNk1Xr151bDt16lRFRUXJbrcrIiJCTzzxRLmP2yWDSpJ69uypjIyMArc2bdooICCgyMfk5uZW4AgBAMCvDRw4UHl5eVqzZo1j2alTp/Txxx/roYce0ieffKLf/e53euKJJ3Tw4EHNmzdPixYt0ksvvSRJ+uCDDzR79mzNmzdPhw8f1urVq3X77eX/EqfLBpXdbldYWFiBW5cuXQq85Fe/fn29+OKLSkxMVFBQkEaOHKnc3FyNHj1a4eHh8vHxUf369TV9+nTH9pJ0//33y2azOe4DAICy4evrqwcffFALFy50LHv33XdVt25dderUSS+99JKeeeYZDR8+XA0aNFC3bt30wgsvaN68eZKk9PR0hYWFqWvXroqKilK7du00cuTIch+321+UPmvWLE2aNEnPPfecJOn111/XmjVr9P777ysqKkrHjx/X8ePHJUk7d+5UaGioFi5cqJ49e6patWrX3WdOTk6BU5XZ2dnlPxEAAFzEyJEj1bZtW33//fe65ZZbtHDhQsflPLt379bOnTsdZ6QkKS8vT5cvX9bFixc1cOBA/fWvf1WDBg3Us2dP3Xvvverbt688Pcs3eVw2qD7++GP5+/s77vfq1eu628XHx+upp55y3E9PT1ejRo10zz33yGazqV69eo51tWvXliQFBwcrLCysyN89ffp0TZs2rdDyd/1fU4DP9SMMzpH+/CxnD6HScod35QConO644w61bNlSixcvVo8ePZScnKyPPvpIkpSfn69p06apf//+hR7n4+OjyMhIHTp0SElJSdqwYYNGjRqlWbNmacuWLfLy8iq3MbtsUHXu3Fl///vfHferV6+uIUOGFNouNja2wP3ExER169ZNt912m3r27Kk+ffqoe/fuJfrdEyZM0NixYx33s7Oz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lOoM1YwZMzRv3jx16tRJQ4YMUcuWLSVJa9ascbwUeDNnz57Vtm3bNGPGDHXu3Fn16tVTu3btNGHCBMfnWmVlZemRRx5RaGioAgMDFR8fr6+++qrAftasWaPY2Fj5+PioVq1a6t+/v2PdTz/9pGHDhqlGjRry8/NTr169dPjwYcf6RYsWKTg4WJ988omaNm0qf39/9ezZs8BZtry8PI0dO1bBwcEKCQnR+PHjZVlWaZ42AADgokoVVJ06ddKpU6d06tQpvf32247ljzzyiObOnVusffj7+8vf31+rV69WTk5OofWWZal37946efKk1q1bp927d6t169bq0qWL4wzW2rVr1b9/f/Xu3Vt79+7Vxo0bFRsb69hHYmKidu3apTVr1uiLL76QZVm69957deXKFcc2Fy9e1F/+8hctWbJEW7duVXp6up566inH+ldeeUVvv/22FixYoG3btunMmTNatWrVDeeWk5Oj7OzsAjcAAOC6bJYTT7esXLlSI0eO1KVLl9S6dWt17NhRgwcPVkxMjD799FPdf//9yszMdFyvJUkNGzbU+PHj9cgjj6h9+/Zq0KCB/vGPfxTa9+HDh9W4cWN9/vnnjg8bPX36tCIjI/XOO+9o4MCBWrRokR566CEdOXJEt956qyTpjTfe0PPPP6+TJ09KkiIiIvTkk0/q6aefliRdvXpV0dHRatOmjVavXn3deU2dOlXTpk0rtPzAhKYK8OFzuqqaqMmFP3MNAOD6srOzFRQUpKysLAUGBt5w21JdQyX9/Kno77//vtLT05Wbm1tg3Z49e4q1jwEDBqh379767LPP9MUXX2j9+vWaOXOm3nrrLf344486f/58oWuyLl26pKNHj0qS9u3bp5EjR1533ykpKfL09NSdd97pWBYSEqLbbrtNKSkpjmV+fn6OmJKk8PBwZWZmSvr5JceMjAzFxcU51nt6eio2NvaGL/tNmDBBY8eOddzPzs5WZGRkcZ4SAABQBZXqJb/XX39dDz30kEJDQ7V37161a9dOISEhOnbsmHr16lWiffn4+Khbt26aPHmytm/frsTERE2ZMkX5+fkKDw/Xvn37CtwOHTqkP/3pT5IkX1/fIvdbVPBYliWbzea4/+sPIrXZbMbXSNntdgUGBha4AQAA11WqoHrjjTf05ptvas6cOfL29tb48eOVlJSkJ554QllZWUYDatas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"/>
 
-[용어/ChatGPT] "Hue"라는 단어의 어원
+#### 함수 사용법 궁금할 때 : Help 함수 활용(68쪽)
 
-- 주로 색상과 관련된 의미로 사용되며, 이는 중세 영어 "hew"라는 단어에서 파생
-
-- 고대 영어의 "hiw"나 "hīw"에서 온 것으로, "외모", "모양", 또는 "색상"을 의미
-
-- 시간이 지나면서 이 단어는 주로 색상을 나타내는 데 사용.
-
-- Hue Saturation Lightness (HSL): 이는 색상 모델의 한 형태로, 색상(hue), 채도(saturation), 밝기(lightness)의 세 가지 기본 요소를 사용하여 색상을 정의
-
-
-### 함수 사용법 궁금할 때 : Help 함수 활용(68쪽)
 
 
 ```python
 # sns.countplot() 매뉴얼 출력
+
 sns.countplot?
 ```
+```
+Signature:
+sns.countplot(
+    data=None,
+    *,
+    x=None,
+    y=None,
+    hue=None,
+    order=None,
+    hue_order=None,
+    orient=None,
+    color=None,
+    palette=None,
+    saturation=0.75,
+    width=0.8,
+    dodge=True,
+    ax=None,
+    **kwargs,
 
-<span style="color:black; background-color:노랑;"> 
-[1;31mSignature:[0m
-[0msns[0m[1;33m.[0m[0mcountplot[0m[1;33m([0m[1;33m
-[0m    [0mdata[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m*[0m[1;33m,[0m[1;33m
-[0m    [0mx[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0my[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morder[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mhue_order[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0morient[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mcolor[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0mpalette[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [0msaturation[0m[1;33m=[0m[1;36m0.75[0m[1;33m,[0m[1;33m
-[0m    [0mwidth[0m[1;33m=[0m[1;36m0.8[0m[1;33m,[0m[1;33m
-[0m    [0mdodge[0m[1;33m=[0m[1;32mTrue[0m[1;33m,[0m[1;33m
-[0m    [0max[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m
-[0m    [1;33m**[0m[0mkwargs[0m[1;33m,[0m[1;33m
-[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
-[1;31mDocstring:[0m
-
-<br>
 Show the counts of observations in each categorical bin using bars.
 
 A count plot can be thought of as a histogram across a categorical, instead
@@ -1036,12 +786,12 @@ its default behavior is somewhat different.
 .. note::
     This function always treats one of the variables as categorical and
     draws data at ordinal positions (0, 1, ... n) on the relevant axis,
-    even when the data has a numeric or date type.</span>
+    even when the data has a numeric or date type.
 
-<span style="color:black; background-color:노랑;">See the :ref:`tutorial <categorical_tutorial>` for more information.   
+See the :ref:`tutorial <categorical_tutorial>` for more information.    
 
-<br>
-Parameters <br>
+Parameters
+----------
 data : DataFrame, array, or list of arrays, optional
     Dataset for plotting. If ``x`` and ``y`` are absent, this is
     interpreted as wide-form. Otherwise it is expected to be long-form.    
@@ -1074,62 +824,55 @@ kwargs : key, value mappings
     Other keyword arguments are passed through to
     :meth:`matplotlib.axes.Axes.bar`.
 
-<br>
-Returns <br>
+Returns
+-------
 ax : matplotlib Axes
     Returns the Axes object with the plot drawn onto it.    
 
-<br>
-See Also <br>
+See Also
+--------
 barplot : Show point estimates and confidence intervals using bars.    
 catplot : Combine a categorical plot with a :class:`FacetGrid`.    
 
-<br>
-Examples <br>
+Examples
+--------
+
 .. include:: ../docstrings/countplot.rst
-[1;31mFile:[0m      c:\users\tokyo\anaconda3\lib\site-packages\seaborn\categorical.py
-[1;31mType:[0m      function</span>
+[1;31mFile:[0m      c:\users\creta\anaconda3\lib\site-packages\seaborn\categorical.py
+[1;31mType:[0m      function
+```
 
 ### 모듈 알아 보기(69쪽)
-
-- 모듈 : 비슷한 함수끼리 묶은 것
-
-- 패키지라는 큰 꾸러미 속에, 모듈이라는 작은 꾸러미가 있는 모양
-
-- [함수, 모듈, 패키지의 차이점](https://onesixx.com/%ED%95%A8%EC%88%98-%EB%AA%A8%EB%93%88-%ED%8C%A8%ED%82%A4%EC%A7%80%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90/)
 
 
 
 ```python
 # sklearn 패키지의 metrics 모듈 로드하기
+
 import sklearn.metrics
 ```
 
 
 ```python
 # sklearn 패키지 metrics 모듈의 accuracy_score() 함수 사용하기
-sklearn.metrics.accuracy_score() # 일단 여기서는 함수에 값 입력하지 않아 에러 메시지 출력됨
+                           # 일단 여기서는 함수에 값 입력하지 않아 에러 메시지 출력됨
+sklearn.metrics.accuracy_score()
 ```
 
-### 모듈명.함수명()으로 함수 사용하기(70쪽)
+#### 모듈명.함수명()으로 함수 사용하기(70쪽)
 
 
 
 ```python
 # sklearn 패키지의 metrics 모듈 로드하기
 from sklearn import metrics
-metrics.accuracy_score()
 ```
 
 
 ```python
 # sklearn 패키지 metrics 모듈의 accuracy_score() 로드하기
-from sklearn.metrics import accuracy_score
-accuracy_score()
+metrics.accuracy_score()
 ```
-
-#### as로 약어 지정하기
-
 
 ### [Do it! 실습] 패키지 설치하기(71쪽)
 
@@ -1159,18 +902,17 @@ pip install pydataset
 ```
 
 <pre>
-Requirement already satisfied: pydataset in c:\users\tokyo\anaconda3\lib\site-packages (0.2.0)
-Requirement already satisfied: pandas in c:\users\tokyo\anaconda3\lib\site-packages (from pydataset) (2.0.3)
-Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\tokyo\anaconda3\lib\site-packages (from pandas->pydataset) (2.8.2)
-Requirement already satisfied: pytz>=2020.1 in c:\users\tokyo\anaconda3\lib\site-packages (from pandas->pydataset) (2023.3.post1)
-Requirement already satisfied: tzdata>=2022.1 in c:\users\tokyo\anaconda3\lib\site-packages (from pandas->pydataset) (2023.3)
-Requirement already satisfied: numpy>=1.21.0 in c:\users\tokyo\anaconda3\lib\site-packages (from pandas->pydataset) (1.24.3)
-Requirement already satisfied: six>=1.5 in c:\users\tokyo\anaconda3\lib\site-packages (from python-dateutil>=2.8.2->pandas->pydataset) (1.16.0)
+Requirement already satisfied: pydataset in c:\users\creta\anaconda3\lib\site-packages (0.2.0)
+Requirement already satisfied: pandas in c:\users\creta\anaconda3\lib\site-packages (from pydataset) (2.0.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\creta\anaconda3\lib\site-packages (from pandas->pydataset) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\creta\anaconda3\lib\site-packages (from pandas->pydataset) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in c:\users\creta\anaconda3\lib\site-packages (from pandas->pydataset) (2023.3)
+Requirement already satisfied: numpy>=1.21.0 in c:\users\creta\anaconda3\lib\site-packages (from pandas->pydataset) (1.24.3)
+Requirement already satisfied: six>=1.5 in c:\users\creta\anaconda3\lib\site-packages (from python-dateutil>=2.8.2->pandas->pydataset) (1.16.0)
 Note: you may need to restart the kernel to use updated packages.
 </pre>
+#### 패키지 함수 사용하기(72쪽)
 
-
-### 패키지 함수 사용하기(72쪽)
 
 
 ```python
@@ -1269,113 +1011,10 @@ pydataset.data()
 
 
 ```python
-temp = pydataset.data()
-temp[temp['dataset_id'].str.contains('mtcars')]
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>dataset_id</th>
-      <th>title</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>47</th>
-      <td>mtcars</td>
-      <td>Motor Trend Car Road Tests</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-```python
-pydataset.data()[45:51]
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>dataset_id</th>
-      <th>title</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>45</th>
-      <td>lynx</td>
-      <td>Annual Canadian Lynx trappings 1821-1934</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>morley</td>
-      <td>Michelson Speed of Light Data</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>mtcars</td>
-      <td>Motor Trend Car Road Tests</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>nhtemp</td>
-      <td>Average Yearly Temperatures in New Haven</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>nottem</td>
-      <td>Average Monthly Temperatures at Nottingham, 1920-1939</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>npk</td>
-      <td>Classical N, P, K Factorial Experiment</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-```python
 # data()에 'mtcars' 입력해 mtcars 데이터셋을 불러옴
 ## mtcars 데이터셋 : 자동자 32종의 정보 담고 있음
 
-df = pydataset.data('mtcars')
-df
+pydataset.data('mtcars')
 ```
 
 <div>
@@ -1863,114 +1502,52 @@ df
 </div>
 
 
-
-```python
-df.info()
-```
-
-<pre>
-<class 'pandas.core.frame.DataFrame'>
-Index: 32 entries, Mazda RX4 to Volvo 142E
-Data columns (total 11 columns):
- #   Column  Non-Null Count  Dtype  
----  ------  --------------  -----  
- 0   mpg     32 non-null     float64
- 1   cyl     32 non-null     int64  
- 2   disp    32 non-null     float64
- 3   hp      32 non-null     int64  
- 4   drat    32 non-null     float64
- 5   wt      32 non-null     float64
- 6   qsec    32 non-null     float64
- 7   vs      32 non-null     int64  
- 8   am      32 non-null     int64  
- 9   gear    32 non-null     int64  
- 10  carb    32 non-null     int64  
-dtypes: float64(5), int64(6)
-memory usage: 3.0+ KB
-</pre>
-[용어/ChatGPT] mtcars 데이터셋
-
-- 1974년 미국의 'Motor Trend' 잡지에 실린 자동차 연비에 대한 데이터
-
-- 32대의 자동차에 대한 다양한 측정값을 포함
-
-- 다음과 같은 열(변수)들로 구성
-
-    - mpg: 연비(Miles/(US) gallon). 갤런당 몇 마일을 주행할 수 있는지 보여줌.
-
-    - cyl: 실린더(cylinder)의 수. 자동차의 엔진에 있는 실린더의 수.
-
-    - disp: 배기량(displacement)을 입방인치로 나타낸 값.
-
-    - hp: 마력(horsepower). 자동차 엔진의 출력을 나타내는 중요한 지표.
-
-    - drat: 후방 축비(rear axle ratio). 이 값은 주행 성능과 연료 효율에 영향을 미침. 이 비율은 엔진에서 나오는 회전력(토크)이 바퀴까지 전달되기 전에 변속기와 차축을 통해 얼마나 감소하거나 증가하는지를 나타냄. -> 엔진의 드라이브 샤프트가 한 번 회전할 때 후방 차축이 회전하는 횟수의 비율입니다. 예를 들어, 후방 축비가 3:1이라면, 드라이브 샤프트가 한 번 회전할 때마다 후방 차축은 3번 회전. ex) 스포츠카는 빠른 가속을 위해 높은 축비를 사용하는 반면, 고속도로 주행에 최적화된 차량은 낮은 축비를 사용하여 연료 효율을 개선
-
-    - wt: 자동차의 무게(weight)를 1000파운드 단위로 표시.
-
-    - qsec: 1/4 마일을 주행하는 데 걸리는 시간(초). 자동차의 가속 능력을 나타내는 지표.
-
-    - vs: 엔진의 실린더 배열 형태(V/S)를 나타냅니다. V-형 배열(0)과 직렬 배열(1)을 구분.
-
-    - am: 변속기 유형(Automatic/Manual)을 나타냄. 자동 변속기(0)와 수동 변속기(1)를 구분.
-
-    - gear: 전진 기어의 수. 자동차의 변속기에 있는 기어의 수.
-
-    - carb: 기화기(carburetors)의 수. 기화기는 연료와 공기를 혼합하여 엔진에 공급하는 부품.
-
-- 이 데이터셋은 자동차 성능과 관련된 여러 측정치를 제공하며, 주로 자동차의 성능 분석, 연비 예측, 다양한 자동차 특성 간의 상관관계 분석 등에 사용.
-
-
 ### [개인 실습] 혼자서 해보기(73쪽)
 
 
-### Q1 : 시험 점수 변수 만들고 출력하기
+#### Q1 : 시험 점수 변수 만들고 출력하기
 
-학생 5명의 시험 점수를 담고 있는 변수를 만들어 출력하시오. 학생들 시험 점수는 다음과 같습니다. <br>
+- 학생 5명의 시험 점수를 담고 있는 변수 score 를 만들어 출력하시오. 학생들 시험 점수는 다음과 같습니다.  
 
-80, 60, 70, 50, 90
-
-
-### A1
+- 80, 60, 70, 50, 90
 
 
 
 ```python
-exam = [80, 60, 70, 50, 90]
-exam
+# A1
+score = [80, 60, 70, 50, 90]
+score
 ```
 
 <pre>
 [80, 60, 70, 50, 90]
 </pre>
-### Q2 : 합계 점수 구하기
+#### Q2 : 합계 점수 구하기
 
 앞 문제에서 만든 변수를 이용해 합계 점수를 구해 보세요
 
 
-### A2
-
-
 
 ```python
-sum(exam)
+# A2
+sum(score)
 ```
 
 <pre>
 350
 </pre>
-### Q3 : 합계 점수를 변수 만들어 출력하기
+#### Q3 : 합계 점수를 변수 만들어 출력하기
 
-합계 점수를 담고 있는 세 변수를 만들어 출력하시오. 앞 문제 풀 때 사용한 코드를 응용하면 됨
+- 합계 점수를 담고 있는 세 변수를 만들어 sum_score라는 변수에 담아 출력하시오. 
 
-
-### A3
+- 앞 문제 풀 때 사용한 코드를 응용하면 됨
 
 
 
 ```python
-total_sum = sum(exam)
-total_sum
+# A3
+sum_score = sum(score)
+sum_score
 ```
 
 <pre>
