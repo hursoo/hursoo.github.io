@@ -6896,7 +6896,7 @@ exam.assign(total = exam['math'] + exam['english'] + exam['science'],
 
 #### Q1 : mpg 데이터 복사본을 만들고, cty와 hwy를 더한 '합산 연비 변수'를 추가하시오
 
-- 힌트: df.assign()을 적용한 결과를 =를 이용해 데이터 프레임에 할당하는 형태로 코드를 작성해야 함
+- 힌트: df.assign()을 적용한 결과를 '=' 을 이용해 데이터 프레임에 할당하는 형태로 코드를 작성해야 함
 
 
 
