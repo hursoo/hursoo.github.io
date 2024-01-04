@@ -8,7 +8,7 @@ toc : true
 ### 1. 개요
 - 이곳에서는 데이터를 자유자재로 다루기 위한 **가공** 방법을 익힌다. 데이터를 추출, 요약하고 여러 데이터를 합치는 방법 등이 그것이다.
 - 실습 코드: 
-	- [2023win_python_lec_03_basic.ipynb](???https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_02_basic.ipynb)
+	- [2023win_python_lec_03_basic.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_03_basic.ipynb)
     - [2023win_python_lec_03_full.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_03_full.ipynb)
                                             
 
@@ -77,10 +77,13 @@ exam.assign(test = np.where(exam['science'] >= 60, 'pass', 'fall'))
 exam.assign(total = exam['math'] + exam['english'] + exam['science']) \
     .sort_values('total') \
     .head()
+exam.assign(total = lambda x: x['math'] + x['english'] + x['science']) \
+    .sort_values('total') \
+    .head()
 ```
 
 ### 5. 집단별 요약: groupby(), agg()
-- 
+- 집단별 평균
 ```python
 exam.groupby(['nclass']) \
     .agg(mean_math = ('math', 'mean'))
