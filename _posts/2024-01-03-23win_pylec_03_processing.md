@@ -9,7 +9,8 @@ toc : true
 - 이곳에서는 데이터를 자유자재로 다루기 위한 **가공** 방법을 익힌다. 데이터를 추출, 요약하고 여러 데이터를 합치는 방법 등이 그것이다.
 - 실습 코드: 
 	- [2023win_python_lec_03_basic.ipynb](???https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_02_basic.ipynb)
-    - [2023win_python_lec_03_full.ipynb](???https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_02_full.ipynb)
+    - [2023win_python_lec_03_full.ipynb](https://github.com/hursoo/2023_winter_python-lecture/blob/main/excise_code/2023win_python_lec_03_full.ipynb)
+                                            
 
 
 ### 2. 추출: query(), df[col_name]
@@ -64,7 +65,7 @@ exam.assign(total = exam['math'] + exam['english'] + exam['science'])
 ```
 - 여러 파생변수 한꺼번에 추가
 ```python
-exam.assign(total = exam['math'] + exam['english'] + exam['science'],
+exam.assign(total = exam['math'] + exam['english'] + exam['science'], \
             mean = (exam['math'] + exam['english'] + exam['science']) / 3)
 ```
 - assign()에 조건을 부여할 수 있는 np.where() 적용
