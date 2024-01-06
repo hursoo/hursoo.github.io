@@ -104,3 +104,16 @@ pd.merge(test1, test2, how = 'left', on = 'id')
 pd.concat([group_a, group_b])
 ```
 
+### 메서드 체이닝의 이해와 실행
+
+### 메서드를 분류하여 이해
+
+|정리|&rarr; |정돈|&rarr; |정렬|
+|:---:|:---:|:---:||:---:|:---:
+|dropna()||groupby()||sort_values()|
+|query()||agg()||head()|
+|assign()|||||
+
+### 간단한 예제
+
+- [자유자재의 데이터 가공(메서드 체이닝): 간단한 예제](http://hursoo.github.io/ex_method_chaining/)
