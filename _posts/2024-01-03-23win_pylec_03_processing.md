@@ -121,7 +121,7 @@ pd.merge(test1, test2, how = 'left', on = 'id')
 pd.concat([group_a, group_b])
 ```
 
-### 4. 실습예제를 통한 적용(7개 메서드 중심)
+### 4. 실습예제를 통한 유형별 적용(7개 메서드 중심)
 
 - 
 |구분|메서드|a|b|c|d|
