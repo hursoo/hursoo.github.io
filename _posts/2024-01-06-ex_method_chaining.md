@@ -77,7 +77,14 @@ toc : true
 </head>
 
 
-# 1. 전체: 데이터 및 실행 코드
+# 전체: 데이터 및 실행 코드
+
+
+[과제] <br>
+
+다음은 2023년 한 해동안 A고등학교 학생들의 모의고사 성적 데이터이다. 성적은 영어, 수학, 역사의 세 과목의 점수이다.
+
+2023년 1학기 학생별 세 과목 합계 평균이 높은 학생 3명을 추출하라
 
 
 
@@ -95,13 +102,13 @@ df = pd.DataFrame({
 })
 
 
-# 판다스 메서드 체이닝을 사용한 데이터 처리
+# 판다스 메서드 체인을 사용한 데이터 처리
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student') \
            .agg(mean_score = ('average_score', 'mean')) \
-           .sort_values(by='mean_score', ascending=False) \
+           .sort_values(by='mean_score', ascending = False) \
            .head(3)
          
 result
@@ -135,32 +142,29 @@ result
   <tbody>
     <tr>
       <th>민수</th>
-      <td>88.666667</td>
+      <td>266.0</td>
     </tr>
     <tr>
       <th>영희</th>
-      <td>87.166667</td>
+      <td>261.5</td>
     </tr>
     <tr>
       <th>철수</th>
-      <td>84.166667</td>
+      <td>252.5</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-=================  
-  
+=================
 
-# 2. 메서드 체이닝 실습 데이터
+
+# 메서드체이닝 실습 데이터
 
 
 
 ```python
-import pandas as pd
-import numpy as np
-
 # 지정된 데이터셋 생성
 df = pd.DataFrame({
     'student': ['철수', '영희', '철수', '영희', '철수', '영희', np.nan, '민수', '민수', '민수', '민지', '민지', '준호', '준호', '민지', '민수', '영희'],
@@ -169,8 +173,6 @@ df = pd.DataFrame({
     'history': [80.0, 85.0, 87.0, 89.0, 91.0, 93.0, 76.0, 78.0, 80.0, np.nan, 75.0, 77.0, 72.0, 74.0, 60.0, 90.0, 100.0],
     'term': ['2023-1', '2023-1', '2023-1', '2023-1', '2023-2', '2023-2', '2023-1', '2023-1', '2023-2', '2023-2', '2023-1', '2023-1', '2023-1', '2023-1', '2023-1', '2023-1', '2023-1']
 })
-
-# 데이터셋 출력
 df
 ```
 
@@ -341,18 +343,18 @@ df
 </div>
 
 
-# 3. 메스드 체이닝 코드
+# 메서드 체이닝 코드
 
 
 
 ```python
-# 판다스 메서드 체이닝을 사용한 데이터 처리
+# 판다스 메서드 체인을 사용한 데이터 처리
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student') \
            .agg(mean_score = ('average_score', 'mean')) \
-           .sort_values(by='mean_score', ascending=False) \
+           .sort_values(by='mean_score', ascending = False) \
            .head(3)
          
 result
@@ -386,25 +388,25 @@ result
   <tbody>
     <tr>
       <th>민수</th>
-      <td>88.666667</td>
+      <td>266.0</td>
     </tr>
     <tr>
       <th>영희</th>
-      <td>87.166667</td>
+      <td>261.5</td>
     </tr>
     <tr>
       <th>철수</th>
-      <td>84.166667</td>
+      <td>252.5</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-# 4. 코드 세부 검토
+# 코드 세부 검토
 
 
-## 4.1. 결측치 제거
+## 결측치 제거
 
 
 
@@ -533,7 +535,7 @@ result
 </div>
 
 
-## 4.2. 2023-1 추출
+## 2023-1 추출
 
 
 
@@ -654,14 +656,14 @@ result
 </div>
 
 
-## 4.3. 파생변수로 성적 평균 추가
+## 파생변수로 성적 평균 추가
 
 
 
 ```python
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3)
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history'])
 result
 ```
 
@@ -699,7 +701,7 @@ result
       <td>90.0</td>
       <td>80.0</td>
       <td>2023-1</td>
-      <td>84.000000</td>
+      <td>252.0</td>
     </tr>
     <tr>
       <th>2</th>
@@ -708,7 +710,7 @@ result
       <td>88.0</td>
       <td>87.0</td>
       <td>2023-1</td>
-      <td>84.333333</td>
+      <td>253.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -717,7 +719,7 @@ result
       <td>92.0</td>
       <td>89.0</td>
       <td>2023-1</td>
-      <td>91.000000</td>
+      <td>273.0</td>
     </tr>
     <tr>
       <th>7</th>
@@ -726,7 +728,7 @@ result
       <td>82.0</td>
       <td>78.0</td>
       <td>2023-1</td>
-      <td>82.666667</td>
+      <td>248.0</td>
     </tr>
     <tr>
       <th>11</th>
@@ -735,7 +737,7 @@ result
       <td>79.0</td>
       <td>77.0</td>
       <td>2023-1</td>
-      <td>82.333333</td>
+      <td>247.0</td>
     </tr>
     <tr>
       <th>12</th>
@@ -744,7 +746,7 @@ result
       <td>83.0</td>
       <td>72.0</td>
       <td>2023-1</td>
-      <td>76.666667</td>
+      <td>230.0</td>
     </tr>
     <tr>
       <th>13</th>
@@ -753,7 +755,7 @@ result
       <td>85.0</td>
       <td>74.0</td>
       <td>2023-1</td>
-      <td>83.000000</td>
+      <td>249.0</td>
     </tr>
     <tr>
       <th>14</th>
@@ -762,7 +764,7 @@ result
       <td>95.0</td>
       <td>60.0</td>
       <td>2023-1</td>
-      <td>85.000000</td>
+      <td>255.0</td>
     </tr>
     <tr>
       <th>15</th>
@@ -771,7 +773,7 @@ result
       <td>95.0</td>
       <td>90.0</td>
       <td>2023-1</td>
-      <td>94.666667</td>
+      <td>284.0</td>
     </tr>
     <tr>
       <th>16</th>
@@ -780,21 +782,21 @@ result
       <td>70.0</td>
       <td>100.0</td>
       <td>2023-1</td>
-      <td>83.333333</td>
+      <td>250.0</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-## 4.4. 학생별 그룹화
+## 학생별 그룹화
 
 
 
 ```python
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student')
 result.groups
 ```
@@ -802,15 +804,14 @@ result.groups
 <pre>
 {'민수': [7, 15], '민지': [11, 14], '영희': [3, 16], '준호': [12, 13], '철수': [0, 2]}
 </pre>
-
-## 4.5. 학생별 과목 평균
+## 학생별 과목 평균
 
 
 
 ```python
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student') \
            .agg(mean_score = ('average_score', 'mean'))
 result
@@ -844,40 +845,40 @@ result
   <tbody>
     <tr>
       <th>민수</th>
-      <td>88.666667</td>
+      <td>266.0</td>
     </tr>
     <tr>
       <th>민지</th>
-      <td>83.666667</td>
+      <td>251.0</td>
     </tr>
     <tr>
       <th>영희</th>
-      <td>87.166667</td>
+      <td>261.5</td>
     </tr>
     <tr>
       <th>준호</th>
-      <td>79.833333</td>
+      <td>239.5</td>
     </tr>
     <tr>
       <th>철수</th>
-      <td>84.166667</td>
+      <td>252.5</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-## 4.6. 평균점수를 정렬
+## 평균점수를 정렬
 
 
 
 ```python
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student') \
            .agg(mean_score = ('average_score', 'mean')) \
-           .sort_values(by='mean_score', ascending=False)
+           .sort_values(by='mean_score', ascending = False)
 result
 ```
 
@@ -909,40 +910,40 @@ result
   <tbody>
     <tr>
       <th>민수</th>
-      <td>88.666667</td>
+      <td>266.0</td>
     </tr>
     <tr>
       <th>영희</th>
-      <td>87.166667</td>
+      <td>261.5</td>
     </tr>
     <tr>
       <th>철수</th>
-      <td>84.166667</td>
+      <td>252.5</td>
     </tr>
     <tr>
       <th>민지</th>
-      <td>83.666667</td>
+      <td>251.0</td>
     </tr>
     <tr>
       <th>준호</th>
-      <td>79.833333</td>
+      <td>239.5</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-## 4.7. 상위점수 학생 3명 출력
+## 상위점수 학생 3명 출력
 
 
 
 ```python
 result = df.dropna(subset=['student', 'english', 'math', 'history']) \
            .query("term == '2023-1'") \
-           .assign(average_score = lambda x: (x['english'] + x['math'] + x['history']) / 3) \
+           .assign(average_score = lambda x: x['english'] + x['math'] + x['history']) \
            .groupby('student') \
            .agg(mean_score = ('average_score', 'mean')) \
-           .sort_values(by='mean_score', ascending=False) \
+           .sort_values(by='mean_score', ascending = False) \
            .head(3)
          
 result
@@ -976,15 +977,15 @@ result
   <tbody>
     <tr>
       <th>민수</th>
-      <td>88.666667</td>
+      <td>266.0</td>
     </tr>
     <tr>
       <th>영희</th>
-      <td>87.166667</td>
+      <td>261.5</td>
     </tr>
     <tr>
       <th>철수</th>
-      <td>84.166667</td>
+      <td>252.5</td>
     </tr>
   </tbody>
 </table>
