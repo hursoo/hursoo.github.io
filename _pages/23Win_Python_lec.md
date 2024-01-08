@@ -14,7 +14,7 @@ author_profile: False
 | 1 | 01/02 (화) | [데이터 분석 환경과 기본 개념](http://hursoo.github.io/23win_pylec_01_basic/) | 첫째마당: 01-03장(014-073)|[변수, 함수, 패키지, 그래프](https://hursoo.github.io/2023win_python_lec_01_full-input/)|
 | 2 | 01/04 (목) | [데이터 프레임과 분석 기초](http://hursoo.github.io/23win_pylec_02_df/) | 둘째마당: 04-05장(074-130)|[데이터 프레임, 데이터 입출력, 파악, 변수명 변경, 파생변수, np.where, 빈도, value_counts](https://hursoo.github.io/2023win_python_lec_02_full-input/)|
 | 3 | 01/09 (화) | [자유자재의 데이터 가공](http://hursoo.github.io/23win_pylec_03_processing/) | 둘째마당: 06장(131-176)|[query, sort_values, assign, agg, groupby, merge, concat](https://hursoo.github.io/2023win_python_lec_03_full-input/)|
-| 4 | 01/11 (목) | [데이터 정제와 그래프 시각화](http://hursoo.github.io/) | 둘째마당: 07-08장(177-221)||
+| 4 | 01/11 (목) | [데이터 정제와 그래프 시각화](http://hursoo.github.io/) | 둘째마당: 07-08장(177-221)|[dropna, scatterplot, barplot, countplot, lineplot, boxplot](https://hursoo.github.io/2023win_python_lec_04_full-input/)|
 | 5 | 01/16 (화) | [실전, 데이터 분석](http://hursoo.github.io/) | 셋째마당: 09장(222-275)||
 | 6 | 01/18 (목) | [다양한 데이터 분석](http://hursoo.github.io/) | 넷째마당: 10-13장(276-329)||
 | 7 | 01/23 (화) | [데이터 과학의 세계](http://hursoo.github.io/) | 다섯째마당: 14-15장(330-379)||
