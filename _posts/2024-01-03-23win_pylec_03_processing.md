@@ -77,7 +77,7 @@ exam.sort_values('math', ascending = False)   # 내림차순 정렬
 exam.sort_values(['nclass', 'math'], ascending = [True, False])
 ```
 
-### 3.3. 파생변수 추가: assign()
+#### 3.3. 파생변수 추가: assign()
 - 한 개의 파생변수 추가
 ```python
 exam.assign(total = exam['math'] + exam['english'] + exam['science'])
@@ -98,7 +98,7 @@ exam.assign(total = lambda x: x['math'] + x['english'] + x['science']) \
     .head()
 ```
 
-### 3.4. 집단별 요약: groupby(), agg()
+#### 3.4. 집단별 요약: groupby(), agg()
 - 집단별 평균
 ```python
 exam.groupby(['nclass']) \
@@ -110,7 +110,7 @@ exam.groupby(['manufacturer', 'drv']) \
     .agg(mean_cty = ('cty', 'mean'))
 ```
 
-### 3.5. 데이터 합치기: merge(), concat()
+#### 3.5. 데이터 합치기: merge(), concat()
 - 가로로 합치기
 ```python
 pd.merge(test1, test2, how = 'left', on = 'id')
