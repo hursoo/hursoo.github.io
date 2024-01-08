@@ -97,6 +97,7 @@ exam.assign(total = lambda x: x['math'] + x['english'] + x['science']) \
     .sort_values('total') \
     .head()
 ```
+    - lambda x: 람다 함수. 데이터 프레임 자리에 **x를 입력하겠다**는 의미 &larr 코드를 간결화
 
 #### 3.4. 집단별 요약: groupby(), agg()
 - 집단별 평균
