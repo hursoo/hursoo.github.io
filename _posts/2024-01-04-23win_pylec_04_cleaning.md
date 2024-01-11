@@ -124,10 +124,12 @@ print(pct75 + 1.5 * iqr) # 상한
 import numpy as np
 
 # 변수를 특정해서(mpg['hwy']) 결측값으로 전환하는 방법
+## df['var']를 대상으로 해서 조건문 변환 결과를 이곳에 반영하는 방식 
 mpg['hwy'] = np.where((mpg['hwy'] < 4.5) | (mpg['hwy'] > 40.5), np.nan, mpg['hwy'])
 
 # df 단위로 assign, lambda를 활용해서 결측값으로 전환하는 방법: 
-## or 조건문은 다음과 같은 구조 속에 넣는다. np.where(()|(), , )
+## df라는 데이터프레임을 대상으로, 그 속의 특정 var을 바꾸고 변환 결과를 df차원에 반영하는 방식
+### or 조건문은 다음과 같은 구조 속에 넣는다. np.where(()|(), , )
 mpg = mpg.assign(hwy = np.where((x['hwy] < 4.5)|(x['hwy] > 40.5), np.nan, x['hwy']))
 
 # 결측치 빈도 확인
