@@ -30,13 +30,18 @@ toc : true
 - Numpy 패키지의 **np.nan**을 입력 &rarr; NaN으로 표시
 
 ##### 2.1.2. 결측치 확인하기
-- pd.isna()를 이용하면 결측치 포함 여부를 알 수 있다.
+- pd.isna()를 이용하면 결측치 포함 여부를 알 수 있다. 
 - pd.isna().sum()으로 결측치 총 개수를 알 수 있다.
 
 ```python
 pd.isna(df)
-pd.isna(df).sum()
-mpg[['drv', 'hwy']].isna().sum()  # 특정 열의 결측치 개수 파악할 경우
+df.isna() # 이것도 바로 위 코드와 동일한 결과 산출
+
+pd.isna(df).sum() 
+df.isna().sum() # 이것도 바로 위 코드와 동일한 결과 산출
+
+# 특정 열의 결측치 개수 파악할 경우
+mpg[['drv', 'hwy']].isna().sum() # mpg[['drv', 'hwy']] 이것이 df에 해당한다고 생각하면 됨. 
 ```
 
 ##### 2.1.3. 결측치 제거하기
@@ -44,7 +49,7 @@ mpg[['drv', 'hwy']].isna().sum()  # 특정 열의 결측치 개수 파악할 경
 - 이 때 subset=[]의 대괄호 속에 결측치가 위치한 변수명을 입력한다.
 
 ```python
-df_nomiss = df.dropna(subset = ['score']) # 변수가 하나일 때
+df_nomiss = df.dropna(subset = ['score']) # 변수가 하나일 때 subset = 'score' 도 동일한 결과 나옴
 df_nomiss = df.dropna(subset = ['score', 'sex']) # 변수가 여러 개일 때
 ```
 
@@ -117,13 +122,16 @@ print(pct75 + 1.5 * iqr) # 상한
 ```python
 # 극단치를 결측 처리하기 : np.where() 이용. 여러 조건 입력시 각 조건을 괄호로 감싸도록 주의
 import numpy as np
+
+# 변수를 특정해서(mpg['hwy']) 결측값으로 전환하는 방법
 mpg['hwy'] = np.where((mpg['hwy'] < 4.5) | (mpg['hwy'] > 40.5), np.nan, mpg['hwy'])
 
-# 해당 값 확인
-mpg[mpg['hwy'].isna()]
+# df 단위로 assign, lambda를 활용해서 결측값으로 전환하는 방법: 
+## or 조건문은 다음과 같은 구조 속에 넣는다. np.where(()|(), , )
+mpg = mpg.assign(hwy = np.where((x['hwy] < 4.5)|(x['hwy] > 40.5), np.nan, x['hwy']))
 
 # 결측치 빈도 확인
-mpg['hwy'].isna().sum()
+mpg['hwy'].isna().sum() # isna()는 그 앞에 df뿐 아니라 df['var']도 올 수 있다.
 ```
 
 ```python
