@@ -26,4 +26,3 @@ author_profile: False
 - [책 소개](http://www.easyspub.co.kr/20_Menu/BookView/515/PUB#tab04), [실습 데이터와 파이썬 코드](https://github.com/youngwoos/Doit_Python)
 
 다만, 본 교재의 내용을 이해하는 데 도움이 되는 설명이나, 파이썬을 한국사 연구에 활용하는 사례 제시 및 이와 관련한 데이터, 파이썬 코드 등은 강사가 보완하여 재구성하였다. 
-
